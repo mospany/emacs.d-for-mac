@@ -1,0 +1,12 @@
+// 自动画数据结构的模板,auto-insert
+// 添加人： 莫生平 日期： 2012/07/29 22:58:07 
+
+// $Id: (>>FILE<<), (>>DATE<<)
+digraph Name {
+    node [shape=record fontsize=12 fontname=Courier style=filled];
+    edge[color=blue];
+    rankdir=LR;
+
+// XXX: place to put subgraph
+
+}

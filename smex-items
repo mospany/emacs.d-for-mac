@@ -1,0 +1,27 @@
+
+;; ----- smex-history -----
+(
+ abs-indent
+ abs-unindent
+ helm-find-files
+ helm-M-x
+ helm-buffers-list
+ list-packages
+ dig
+)
+
+;; ----- smex-data -----
+(
+ (cd . 1)
+ (list-packages . 2)
+ (dig . 2)
+ (erc-tls . 1)
+ (ping . 2)
+ (traceroute . 1)
+ (tree-buffer-tab-pressed . 1)
+ (helm-buffers-list . 4)
+ (helm-find-files . 2)
+ (helm-M-x . 1)
+ (abs-indent . 4)
+ (abs-unindent . 1)
+)

@@ -35,6 +35,8 @@
 ;; linum style
 ;;
 (require 'linum)
+(require 'my-which-func)
+
 (setq linum-format "%4d ")
 
 (toggle-indicate-empty-lines nil)
@@ -44,15 +46,21 @@
 ;;
 ;; http://emacs-fu.blogspot.com/2011/08/customizing-mode-line.html
 (setq-default mode-line-format
+;(setq-default mosp-mode-line-format
               (list
+
                ;; the buffer name; the file name as a tool tip
-               '(:eval (propertize "%b " 'face 'font-lock-keyword-face 'help-echo (buffer-file-name)))
+               " " '(:eval (propertize "%b " 'face 'font-lock-keyword-face 'help-echo (buffer-file-name)))
 
                ;; line and column
                "(" (propertize "%l" 'face 'font-lock-type-face) "," (propertize "%c" 'face 'font-lock-type-face) ") "
 
                ;; relative position, size of file
                "[" (propertize "%p" 'face 'font-lock-constant-face) "/" (propertize "%I" 'face 'font-lock-constant-face) "] "
+
+	       ;; 显示所在函数名称, add by mosp, 2015-8-20
+               ;'(which-func-mode ("" which-func-format) )
+               '(which-func-mode ("" which-func-format) )
 
                ;; the current major mode for the buffer.
                "[" '(:eval (propertize "%m" 'face 'font-lock-string-face 'help-echo buffer-file-coding-system)) "] "

@@ -1,10 +1,11 @@
 ;;设置个人信息
-(setq user-full-name "pein")
-(setq user-mail-address "pein0119@gmail.com")
+(setq user-full-name    "mosp")
+(setq user-mail-address "moshengping@163.com")
+(defconst my-company "Beijing Technology Co.,Ltd." "公司名称")
 
 ;;设置默认工作目录
 ;;
-(setq default-directory "~/workspace/") 
+(setq default-directory "~/") 
 
 ;;提示
 ;;M-X 输入命令时有提示
@@ -17,6 +18,9 @@
 (setq ido-use-filename-at-point nil)
 (setq ido-auto-merge-work-directories-length 0)
 (setq ido-use-virtual-buffers t)
+;;ido模式中不保存目录列表,解决退出Emacs时ido要询问编码的问题。
+(setq ido-save-directory-list-file nil)
+
 
 ;; buffer在外部改动时，自动刷新buffer
 (global-auto-revert-mode 1)
@@ -36,6 +40,7 @@
   (require 'package)
   (package-initialize)
   (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  ;(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 )
 
 ;; Emacs找不到合适的模式时，缺省使用text-mode
@@ -100,3 +105,41 @@
 ;; 设置默认编码
 (setq default-buffer-file-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+(setq-default make-backup-files -1)
+
+;解决Emacs的Shell Mode显示乱码
+(ansi-color-for-comint-mode-on)
+;;不产生备份
+(setq backup-inhibited t)
+;不生成名为#filename# 的临时文件
+(setq auto-save-default -1)
+;tab大小为4个空格
+(setq default-tab-width 4)
+(setq-default indent-tabs-mode -1)
+
+;;CUA-MODE 矩形块复制粘贴操作 http://www.emacswiki.org/emacs/CuaMode
+(cua-mode t)
+(setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands 矩形操作后不TAB对齐
+(transient-mark-mode 1) ;; No region when it is not highlighted
+(setq cua-keep-region-after-copy t) ;; Standard Windows behaviour
+
+;;; ### Uniquify ###
+;;; --- 相同缓存名字时加上路径以区别
+(require 'uniquify)    ;如果有两个重名buffer, 则再前面加上路径区别 emacs库
+(setq uniquify-buffer-name-style 'post-forward-angle-brackets) ;反方向的显示重复的Buffer名字
+(setq uniquify-separator "/")                                  ;分隔符
+(setq uniquify-after-kill-buffer-p t)                          ;删除重复名字的Buffer后重命名
+
+(setq dired-listing-switches "-aluh")                  ;传给 ls 的参数
+
+;; 雅黑字体
+;(set-default-font "-apple-Microsoft_YaHei-medium-normal-normal-*-12-*-*-*-p-0-iso10646-1")
+(set-language-environment 'UTF-8)
+(set-locale-environment "UTF-8")
+;(set-default-font "Courier New-13")
+;(set-default-font "Monaco-14")
+;(set-default-font "Inconsolata-13")
+;(set-default-font "Anonymous Pro-15")
+(set-fontset-font "fontset-default" 'unicode '("WenQuanYi Zen Hei" . "unicode-ttf"))
+

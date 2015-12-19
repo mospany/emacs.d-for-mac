@@ -1190,8 +1190,9 @@ the completion or nil if canceled by the user."
 		"param " (car parms) " " (list 'p prompt) '> 'n
 		(doxymacs-parm-tempo-element (cdr parms))))
 	 ((string= doxymacs-doxygen-style "C++")
-	  (list 'l "/// " (doxymacs-doxygen-command-char)
-		"param " (car parms) " " (list 'p prompt) '> 'n
+;	  (list 'l "/// " (doxymacs-doxygen-command-char)
+      (list 'l " * " (doxymacs-doxygen-command-char)            
+		"param  " (car parms) ":  " (list 'p prompt) '> 'n
 		(doxymacs-parm-tempo-element (cdr parms))))
 	 (t
 	  (doxymacs-invalid-style))))

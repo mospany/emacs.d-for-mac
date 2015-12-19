@@ -1,0 +1,22 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("current"
+ (filename . "~/study/golang/ebook/go语言编程.pdf")
+ (front-context-string)
+ (rear-context-string . "f\n9244395\n%%EOF\n")
+ (position . 9294354)
+ (page . 27)
+ (handler . doc-view-bookmark-jump))
+("org-capture-last-stored"
+ (filename . "~/.gtd/inbox.org")
+ (front-context-string . "** TODO 下周开始调试代码")
+ (rear-context-string . "ev.el]]\n* Tasks\n")
+ (position . 442))
+("org-remember-last-stored"
+ (filename . "~/KuaiPan/mynote/gtd/life.org")
+ (front-context-string . "** Each dish onl")
+ (rear-context-string . "+html: </div>\n\n\n")
+ (position . 242))
+)
