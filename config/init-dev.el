@@ -27,12 +27,15 @@
 (add-to-list 'load-path "~/.emacs.d/lib/sdcv")
 (add-to-list 'load-path "~/.emacs.d/lib/simpleclip")
 (add-to-list 'load-path "~/.emacs.d/lib/find-file-in-project")
+(add-to-list 'load-path "~/.emacs.d/lib/chinese-fonts-setup")
 
 (require 'eval-after-load)
 (require 'ahei-misc)
 ;conf-font存在放大字体时中文不变的问题 alter by mosp,2015/08/23 11:26:33
 ;(require 'conf-font)  
-(require 'bhj-fonts) 
+;bhj-fonts存在org-mode下中英文不等宽问题，alter by mosp, 2016/02/19 23:43:06 
+;(require 'bhj-fonts) 
+(require 'chinese-fonts-setup) 
 
 ;;设置redo
 (require 'redo+)

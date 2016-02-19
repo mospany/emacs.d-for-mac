@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sat Dec 19 20:57:40 2015
+;; Created Sat Feb 20 00:02:20 2016
 ;; Desktop file format version 206
 ;; Emacs version 24.3.1
 
@@ -11,21 +11,186 @@
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring '("f6" "global" "home.org" "org" "font-lock-type-face" "kbd" "evernote" "bh" "test" "org-mode" "font" "unset" "shift" "tab" "org-mode-hook" "setq"))
-(setq regexp-search-ring '("\\_<</font>\\_>" "\\_<>‘ÐÔ‘ÄÜ‘£¬‘ÐÔ‘ÄÜ‘£¬‘ÐÔ‘ÄÜ‘¡£\\_>" "i/" "Router" "xcs" "c-mode" "go-mode" "cscope" "evil" "go" "esh" "org" "err" "er" "\"su" "\"sen"))
-(setq register-alist (list '(119) '(113) '(t . "mes]\n") '(102 . "struct rte_eth_xstats_name_off {\n	char name[RTE_ETH_XSTATS_NAME_SIZE];\n") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk 1 (get-buffer "‘»ù‘ÓÚDPDK‘¿ª‘·¢‘µÄ‘¸ß‘ÐÔ‘ÄÜDNS‘·þ‘Îñ‘Æ÷‘Êµ‘¼ù‘×Ü‘½á.org")))) mk)) '(48 . "‘ÐÔ‘ÄÜ‘£¬‘ÐÔ‘ÄÜ‘£¬‘ÐÔ‘ÄÜ‘¡£(‘ÖØ‘Òª‘µÄ‘ÊÂ‘ÖØ‘¸´‘Èý‘±é)\n")))
-(setq file-name-history '("~/KuaiPan/mydoc/cnblogs/technology/opensource/DPDK/fastnp/‘»ù‘ÓÚDPDK‘¿ª‘·¢‘µÄ‘¸ß‘ÐÔ‘ÄÜDNS‘·þ‘Îñ‘Æ÷‘Êµ‘¼ù‘×Ü‘½á.html" "~/KuaiPan/mydoc/cnblogs/technology/opensource/DPDK/fastnp/‘»ù‘ÓÚDPDK‘¿ª‘·¢‘µÄ‘¸ß‘ÐÔ‘ÄÜDNS‘·þ‘Îñ‘Æ÷‘Êµ‘¼ù‘×Ü‘½á.org" "/home/mosp/KuaiPan/mydoc/cnblogs/technology/opensource/DPDK/‘»ù‘ÓÚDPDK‘¿ª‘·¢‘µÄ‘¸ß‘ÐÔ‘ÄÜDNS‘·þ‘Îñ‘Æ÷‘Êµ‘¼ù‘×Ü‘½á.org" "/home/mosp/KuaiPan/mydoc/cnblogs/‘¼¼‘Êõ/‘¿ª‘Ô´‘Ïî‘Ä¿/DPDK/‘»ù‘ÓÚDPDK‘¿ª‘·¢‘µÄ‘¸ß‘ÐÔ‘ÄÜDNS‘·þ‘Îñ‘Æ÷‘Êµ‘¼ù‘×Ü‘½á.org" "~/KuaiPan/mydoc/notes/gtd/note.org" "~/KuaiPan/mydoc/notes/gtd/task.org" "~/KuaiPan/mydoc/notes/gtd/project.org" "~/KuaiPan/mydoc/notes/gtd/home.org" "~/KuaiPan/mydoc/notes/gtd/study.org" "~/KuaiPan/mydoc/notes/gtd/life.org" "/usr/include/stdio.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/lib/common/wr_scrn.c" "/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/pktgen-master.sh" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/lib/common/wr_copyright_info.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/lib/common/wr_copyright_info.c" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/lib/common/wr_scrn.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-display.c" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-constants.h" "/usr/include/x86_64-linux-gnu/bits/poll.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-random.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-ether.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-dump.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-pcap.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-stats.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-range.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-seq.h" "/usr/include/x86_64-linux-gnu/sys/poll.h" "/usr/include/x86_64-linux-gnu/bits/netdb.h" "/usr/include/x86_64-linux-gnu/bits/termios.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-log.h" "~/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-capture.h"))
+(setq regexp-search-ring '("i" "\\_<</font>\\_>" "\\_<>‘ÐÔ‘ÄÜ‘£¬‘ÐÔ‘ÄÜ‘£¬‘ÐÔ‘ÄÜ‘¡£\\_>" "i/" "Router" "xcs" "c-mode" "go-mode" "cscope" "evil" "go" "esh" "org" "err" "er" "\"su"))
+(setq register-alist (list '(119) '(113) '(t . "mes]\n") '(102 . "struct rte_eth_xstats_name_off {\n	char name[RTE_ETH_XSTATS_NAME_SIZE];\n") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (list 'lambda '() (list 'set-marker mk 1 (get-buffer "init-dev.el")))) mk)) '(48 . "chinese-fonts-setup\"")))
+(setq file-name-history '("/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" "/home/mosp/KuaiPan/doc/emacs/org-mode/org-manual.org" "/home/mosp/.emacs.d/config/init-dev.el" "/home/mosp/.emacs.d/config/init-base.el" "/home/mosp/.emacs.d/lib/themes/molokai-theme.el" "/home/mosp/.emacs.d/lib/themes/molokai-theme-kit.el" "/home/mosp/.emacs.d/config/init-face.el" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/_default/single.html" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/index.html" "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/post/2016/2016-02-14-pango-development-quick-start.md" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/post/2016/2016-02-14-pango-development-introduce.md" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/post/2016/2016-01-26-2015-fastweb-outstanding-engineer.md" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/about.md" "/home/mosp/KuaiPan/mygithub/github_blogs/hugo/main.go" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/post/2016/2016-01-25-my-blog-architecture.md" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/post/2016/2016-02-09-my-linux-common-tools.md" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/partials/header.html" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/_default/indexes.html" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/indexes/tag.html" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/404.html" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/theme.toml" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/LICENSE.md" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/static/baidu_verify_QSTq4wVPVM.html" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/static/.htaccess" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/static/robots.txt" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/static/CNAME" "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/layouts/sitemap.xml"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-display.c"
+  "pktgen-display.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  6556
+  '(8344 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
 (desktop-create-buffer 206
   "/home/mosp/KuaiPan/mydoc/cnblogs/technology/opensource/DPDK/fastnp/‘»ù‘ÓÚDPDK‘¿ª‘·¢‘µÄ‘¸ß‘ÐÔ‘ÄÜDNS‘·þ‘Îñ‘Æ÷‘Êµ‘¼ù‘×Ü‘½á.org"
   "‘»ù‘ÓÚDPDK‘¿ª‘·¢‘µÄ‘¸ß‘ÐÔ‘ÄÜDNS‘·þ‘Îñ‘Æ÷‘Êµ‘¼ù‘×Ü‘½á.org"
   'org-mode
   '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode cnblogs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  627
-  '(623 nil)
+  3671
+  '(1 nil)
   nil
   nil
   '((buffer-file-coding-system . utf-8-unix) (overwrite-mode) (fill-column . 1) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/mosp/.emacs.d/config/init-dev.el"
+  "init-dev.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode srecode-minor-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  5088
+  '(1875 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/doc/emacs/org-mode/org-manual.org"
+  "org-manual.org"
+  'org-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode cnblogs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  2283
+  '(123056 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-dos) (overwrite-mode) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-stats.c"
+  "pktgen-stats.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  11577
+  '(3731 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/.emacs.d/config/init-base.el"
+  "init-base.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode srecode-minor-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1340
+  '(3813 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/.emacs.d/config/init-face.el"
+  "init-face.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode srecode-minor-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1
+  '(505 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/.emacs.d/lib/themes/molokai-theme.el"
+  "molokai-theme.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode srecode-minor-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  5868
+  '(5868 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/_default/single.html"
+  "single.html"
+  'html-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode zencoding-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . chinese-gb18030-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/index.html"
+  "index.html"
+  'html-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode zencoding-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  710
+  '(248 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/post/2016/2016-02-14-pango-development-quick-start.md"
+  "2016-02-14-pango-development-quick-start.md"
+  'markdown-mode
+  '(global-auto-revert-mode highlight-parentheses-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  581
+  '(352 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/post/2016/2016-02-14-pango-development-introduce.md"
+  "2016-02-14-pango-development-introduce.md"
+  'markdown-mode
+  '(global-auto-revert-mode highlight-parentheses-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(784 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/post/2016/2016-01-26-2015-fastweb-outstanding-engineer.md"
+  "2016-01-26-2015-fastweb-outstanding-engineer.md"
+  'markdown-mode
+  '(global-auto-revert-mode highlight-parentheses-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  90
+  '(71 t)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/partials/header.html"
+  "header.html"
+  'html-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode zencoding-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  2248
+  '(2428 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/_default/indexes.html"
+  "indexes.html"
+  'html-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode zencoding-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/create-post.py"
+  "create-post.py"
+  'python-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode flymake-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1089
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (overwrite-mode)))
 
 (desktop-create-buffer 206
   "/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/lib/common/wr_scrn.c"
@@ -34,17 +199,6 @@
   '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
   2430
   '(1 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-stats.c"
-  "pktgen-stats.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  7675
-  '(3731 nil)
   nil
   nil
   '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
@@ -89,17 +243,6 @@
   '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
   1985
   '(nil nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/src/pktgen-2.9.1/app/pktgen-display.c"
-  "pktgen-display.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  8276
-  '(7540 nil)
   nil
   nil
   '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
@@ -210,17 +353,6 @@
   '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode srecode-minor-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
   31890
   '(31890 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/home/mosp/.emacs.d/config/init-dev.el"
-  "init-dev.el"
-  'emacs-lisp-mode
-  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode srecode-minor-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  6132
-  '(13301 nil)
   nil
   nil
   '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
@@ -567,17 +699,6 @@
   '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
 
 (desktop-create-buffer 206
-  "/home/mosp/KuaiPan/doc/emacs/org-mode/org-manual.org"
-  "org-manual.org"
-  'org-mode
-  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode cnblogs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  120430
-  '(53698 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-dos) (overwrite-mode) (truncate-lines)))
-
-(desktop-create-buffer 206
   "/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/mysrc/trunk/dpdk/lib/librte_ether/rte_ethdev.h"
   "rte_ethdev.h"
   'c-mode
@@ -710,94 +831,6 @@
   nil)
 
 (desktop-create-buffer 206
-  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/anti_attack/mysrc/kans/api/ret_exx.php"
-  "ret_exx.php"
-  'php-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  495
-  '(4061 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (overwrite-mode) (case-fold-search . t)))
-
-(desktop-create-buffer 206
-  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/anti_attack/mysrc/kans/etc/kans.primer.conf"
-  "kans.primer.conf"
-  'conf-unix-mode
-  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  425
-  '(425 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/anti_attack/mysrc/kans/api/index.php"
-  "index.php"
-  'php-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  2092
-  '(8961 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (case-fold-search . t)))
-
-(desktop-create-buffer 206
-  nil
-  "librte_ether"
-  'dired-mode
-  '(global-auto-revert-mode highlight-parentheses-mode semantic-show-unmatched-syntax-mode guide-key-mode evil-escape-mode)
-  354
-  '(nil nil)
-  t
-  '("/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/mysrc/trunk/dpdk/lib/librte_ether/")
-  nil)
-
-(desktop-create-buffer 206
-  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/mysrc/trunk/dpdk/lib/librte_ether/rte_ethdev.c"
-  "rte_ethdev.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode hi-lock-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  7433
-  '(7467 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/anti_attack/mysrc/kans/kern_src/global.h"
-  "global.h"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/home/mosp/KuaiPan/mydoc/notes/gtd/life.org"
-  "life.org"
-  'org-mode
-  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode cnblogs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines)))
-
-(desktop-create-buffer 206
-  "/home/mosp/KuaiPan/mydoc/notes/gtd/study.org"
-  "study.org"
-  'org-mode
-  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode cnblogs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines)))
-
-(desktop-create-buffer 206
   "/home/mosp/KuaiPan/mydoc/cnblogs/technology/opensource/DPDK/fastnp/‘»ù‘ÓÚDPDK‘¿ª‘·¢‘µÄ‘¸ß‘ÐÔ‘ÄÜDNS‘·þ‘Îñ‘Æ÷‘Êµ‘¼ù‘×Ü‘½á.html"
   "‘»ù‘ÓÚDPDK‘¿ª‘·¢‘µÄ‘¸ß‘ÐÔ‘ÄÜDNS‘·þ‘Îñ‘Æ÷‘Êµ‘¼ù‘×Ü‘½á.html"
   'html-mode
@@ -862,4 +895,268 @@
   nil
   nil
   '((buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mydoc/notes/gtd/study.org"
+  "study.org"
+  'org-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode cnblogs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mydoc/notes/gtd/life.org"
+  "life.org"
+  'org-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode cnblogs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/anti_attack/mysrc/kans/kern_src/global.h"
+  "global.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/mysrc/trunk/dpdk/lib/librte_ether/rte_ethdev.c"
+  "rte_ethdev.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode hi-lock-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  7433
+  '(7467 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  nil
+  "librte_ether"
+  'dired-mode
+  '(global-auto-revert-mode highlight-parentheses-mode semantic-show-unmatched-syntax-mode guide-key-mode evil-escape-mode)
+  354
+  '(nil nil)
+  t
+  '("/home/mosp/work/fastweb-centos6.2/home/mosp/task/fastNP/mysrc/trunk/dpdk/lib/librte_ether/")
+  nil)
+
+(desktop-create-buffer 206
+  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/anti_attack/mysrc/kans/api/index.php"
+  "index.php"
+  'php-mode
+  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  2092
+  '(8961 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode) (case-fold-search . t)))
+
+(desktop-create-buffer 206
+  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/anti_attack/mysrc/kans/etc/kans.primer.conf"
+  "kans.primer.conf"
+  'conf-unix-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  425
+  '(425 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/layouts/rss.xml"
+  "rss.xml"
+  'nxml-mode
+  '(global-auto-revert-mode highlight-parentheses-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  636
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/static/robots.txt"
+  "robots.txt"
+  'text-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  55
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/layouts/sitemap.xml"
+  "sitemap.xml"
+  'nxml-mode
+  '(global-auto-revert-mode highlight-parentheses-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/static/.htaccess"
+  ".htaccess"
+  'text-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/config.yaml"
+  "config.yaml"
+  'yaml-mode
+  '(global-auto-revert-mode highlight-parentheses-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  796
+  '(797 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  nil
+  "static"
+  'dired-mode
+  '(global-auto-revert-mode highlight-parentheses-mode semantic-show-unmatched-syntax-mode guide-key-mode evil-escape-mode)
+  213
+  '(nil nil)
+  t
+  '("/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/static/")
+  nil)
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/static/baidu_verify_QSTq4wVPVM.html"
+  "baidu_verify_QSTq4wVPVM.html"
+  'html-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode zencoding-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/LICENSE.md"
+  "LICENSE.md"
+  'markdown-mode
+  '(global-auto-revert-mode highlight-parentheses-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/static/CNAME"
+  "CNAME"
+  'text-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  14
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-dos) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/theme.toml"
+  "theme.toml"
+  'text-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/post/2016/2016-01-25-my-blog-architecture.md"
+  "2016-01-25-my-blog-architecture.md"
+  'markdown-mode
+  '(global-auto-revert-mode highlight-parentheses-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . utf-8-dos) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/LICENSE"
+  "LICENSE"
+  'text-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/404.html"
+  "404.html"
+  'html-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode zencoding-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/content/about.md"
+  "about.md"
+  'markdown-mode
+  '(global-auto-revert-mode highlight-parentheses-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-file-coding-system . utf-8-dos) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/work/fastweb-centos6.2/home/mosp/task/anti_attack/mysrc/kans/api/ret_exx.php"
+  "ret_exx.php"
+  'php-mode
+  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  495
+  '(4061 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (overwrite-mode) (case-fold-search . t)))
+
+(desktop-create-buffer 206
+  "/home/mosp/KuaiPan/mygithub/github_blogs/mospan-hugo-blog/themes/rapid/layouts/indexes/tag.html"
+  "tag.html"
+  'html-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode zencoding-mode multi-web-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+
+(desktop-create-buffer 206
+  "/home/mosp/.emacs.d/lib/themes/molokai-theme-kit.el"
+  "molokai-theme-kit.el"
+  'emacs-lisp-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode srecode-minor-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  1
+  '(3756 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
 
