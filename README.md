@@ -1,6 +1,6 @@
 emacs.d
 =======
-我的emacs配置文件(GNU emacs24.2)
+mospany的emacs配置文件(GNU emacs24.2) for mac
 
 # 适用语言 #
 
@@ -48,9 +48,9 @@ emacs.d
 
 支持三种访问协议：
 
-* HTTP协议: `https://github.com/pein0119/emacs.d.git` 。
-* Git协议: `git://github.com/pein0119/emacs.d.git` 。
-* SSH协议: `ssh://git@github.com/pein0119/emacs.d.git` 。
+* HTTP协议: `https://github.com/mospany/emacs.d.git` 。
+* Git协议: `git://github.com/mospany/emacs.d.git` 。
+* SSH协议: `ssh://git@github.com/mospany/emacs.d.git` 。
 
 ## 具体安装 ##
 

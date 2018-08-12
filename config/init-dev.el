@@ -29,6 +29,8 @@
 (add-to-list 'load-path "~/.emacs.d/lib/find-file-in-project")
 (add-to-list 'load-path "~/.emacs.d/lib/chinese-fonts-setup")
 
+(setq exec-path (cons "/usr/local/bin" exec-path))  
+
 (require 'eval-after-load)
 (require 'ahei-misc)
 ;conf-font存在放大字体时中文不变的问题 alter by mosp,2015/08/23 11:26:33
@@ -250,7 +252,7 @@
 
 ;; 加载cscope，用来阅读代码
 ;; 需要先安装： sudo apt-get install cscope
-(setq scope-program "/usr/bin/cscope")
+(setq scope-program "/usr/local/bin/cscope")
 ;;;http://www.emacswiki.org/emacs/CScopeAndEmacs
 (require 'xcscope)
 (require 'xcscope+);;;;;;cscope的插件扩展  http://www.emacswiki.org/emacs/xcscope+.el
@@ -282,6 +284,7 @@
 ;;---------go-mode------------------------------------
 (require 'go-mode)
 (require 'go-mode-load)
+(require 'go-mode-setting)
 (require 'go-autocomplete)
 (require 'auto-complete-config)
 
@@ -496,10 +499,11 @@
 
 ;;emacs中管理多个终端的工具
 ;;http://www.emacswiki.org/emacs/MultiTerm
-(require 'multi-term)
-(setq multi-term-program "/usr/bin/zsh")
-(setq multi-term-buffer-name "term")
-(setq multi-term-dedicated-select-after-open-p t)
+;; --------shade by mosp for debug emacs24.5, 2016-05-20-----------------
+;(require 'multi-term)
+;(setq multi-term-program "/bin/zsh")
+;(setq multi-term-buffer-name "term")
+;(setq multi-term-dedicated-select-after-open-p t)
 
 ;;注释工具
 ;;;代码加框注释
@@ -796,19 +800,19 @@ original buffer content
 ;;当出现"cannot open load file:org-nil"时，是由于没有require相关文件
 (require 'org)
 (require 'org-install)
-(require 'org-latex)
-(require 'org-publish)
-(require 'org-latex)
-(require 'org-beamer)
-(require 'org-odt)
+;(require 'org-latex) ;-----shade by mosp for debug emacs24.5 in 2016-05-20--------------
+;(require 'org-publish)
+;(require 'org-latex)
+;(require 'org-beamer)
+;(require 'org-odt)
 (require 'org-src)
-(require 'org-html)
-(require 'org-ascii)
-(require 'org-docbook)
+;(require 'org-html)
+;(require 'org-ascii)
+;(require 'org-docbook)
 (require 'org-table)
-(require 'org-remember)
-(require 'htmlize)
-(require 'org-export-pdf)
+;(require 'org-remember)
+;(require 'htmlize)
+;(require 'org-export-pdf)
 ;;+evernote-mode+org-mode
 ;;基本想法是：在org-remember完成时,调用一函数来处理此remember的内容,将此内容转化为一个evernote的笔记.
 
@@ -893,7 +897,7 @@ original buffer content
                              "~/KuaiPan/mydoc/notes/todos/home.org"
                              "~/KuaiPan/mydoc/notes/todos/life.org"                                                                                       
                              ))
-(org-remember-insinuate) 
+;(org-remember-insinuate)  ;------------shade by mosp for debug emacs24.5 in 2016-05-20 -----------------
 (setq org-directory "~/KuaiPan/mydoc/notes/gtd/") 
 ;(setq org-remember-templates '(("New" ?n "* %? %t \n %i\n %a" "~/.gtd/inbox.org" ) 
 ;                               ("Task" ?t "** TODO %?\n %i\n %a" "~/.gtd/task.org" "Tasks") 
@@ -902,6 +906,25 @@ original buffer content
 ;                               ("Note" ?r "* %?\n %i\n %a" "~/.gtd/note.org" ) 
 ;                               ("Project" ?p "** %?\n %i\n %a" "~/.gtd/project.org" %g) ))
 ;;;相当于上面注释的，去掉了%a，代表写入时不自动插入当前光标所在标题的链接, 2014/06/20 15:10:30 alter by mosp
+(setq org-capture-templates
+      `(("n" "New" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/inbox.org" "New")
+            "* %? %t\n  %i\n ")
+        ("t" "Task" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/task.org" "Task")
+            "** TODO %?\n  %i\n  ")
+        ("c" "Calendar" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/task.org" "Task")
+            "** TODO %?\n  %i\n  ")
+        ("i" "Idea" entry (file+datetree ,"~/KuaiPan/mydoc/notes/gtd/task.org" "Idea")
+            "* %?\n  %i\n  ")
+        ("n" "Note" entry (file+datetree ,"~/KuaiPan/mydoc/notes/gtd/note.org" "Note")
+            "* %?\n  %i\n  ")
+        ("s" "Study" entry (file+datetree ,"~/KuaiPan/mydoc/notes/gtd/study.org" "Study")
+            "* %?\n  %i\n  ")
+        ("h" "Home" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/home.org" "Home")
+            "* %?\n  %i\n  ")
+        ("l" "Life" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/life.org" "Life")
+            "* %?\n  %i\n  ")
+        ("p" "Project" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/project.org" "Project")
+            "* %?\n  %i\n  ")))
 (setq org-remember-templates '(("New" ?n "* %? %t \n %i\n" "~/KuaiPan/mydoc/notes/gtd/inbox.org" ) 
                                ("Task" ?t "** TODO %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/task.org" "Tasks") 
                                ("Calendar" ?c "** TODO %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/task.org" "Tasks") 
@@ -1218,3 +1241,9 @@ original buffer content
 (window-numbering-mode 1)
 ;; }}
 
+;-----------Org Mode打开Markdown文档的转换功能-----------------
+(setq org-export-backends (quote (md ascii html icalendar latex)))
+
+;;---------emacs blog form org-mode to hugo -------------------------------
+(require 'org2hugo-single)
+(require 'org2hugo-subtree)

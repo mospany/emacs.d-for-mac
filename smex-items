@@ -3,11 +3,11 @@
 (
  abs-indent
  abs-unindent
- helm-find-files
- helm-M-x
- helm-buffers-list
  list-packages
  dig
+ ping
+ cd
+ erc-tls
 )
 
 ;; ----- smex-data -----

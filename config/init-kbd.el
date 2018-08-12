@@ -209,11 +209,11 @@
 (global-set-key [C-f10] 'sr-speedbar-toggle) ;;sr-speedbar按键绑定
 (global-set-key [C-f11] 'ediff)
 (global-set-key [S-f11] 'ediff-directories)
-(global-set-key [f12] 'svn-status)
-(global-set-key [S-f12] 'git-status)
+(global-set-key [f12] 'git-status)
+(global-set-key [S-f12] 'svn-status)
 
 ;;shell配置
-(setq shell-file-name "/usr/bin/zsh")
+(setq shell-file-name "/bin/zsh")
 ;shell着色
 (autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on t)
@@ -293,6 +293,9 @@
 ;;org-remember启动的快捷键
 (global-set-key (kbd "C-c C-r") 'org-remember)
 (global-set-key (kbd "C-c C-,") 'org-priority)
+
+;;org-capture启动的快捷键
+ (define-key global-map "\C-cc" 'org-capture)
 
 ;; -------------emacs w3m--------------------
 (global-set-key "\C-xm" 'browse-url-at-point)  

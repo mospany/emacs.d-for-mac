@@ -52,8 +52,12 @@
                (t "user"))))
 (setq tabbar-buffer-groups-function 'my-tabbar-buffer-groups)
 
+;;;------mospan 2016-05-18----------------------
 (require 'tabbar)
+(when (require 'mwheel nil 'noerror)
+  (mouse-wheel-mode t))
 (tabbar-mode t)
+
  ;; Add a buffer modification state indicator in the tab label, and place a
  ;; space around the label to make it looks less crowd.
  (defadvice tabbar-buffer-tab-label (after fixup_tab_label_space_and_flag activate)
@@ -63,7 +67,7 @@
              (concat " + " (concat ad-return-value " "))
            (concat " " (concat ad-return-value " ")))))
 
- ;; Called each time the modification state of the buffer changed.
+ ;; Called each time the modification state of the buffer changed. 2016-05-18
  (defun ztl-modification-state-change ()
    (tabbar-set-template tabbar-current-tabset nil)
    (tabbar-display-update))

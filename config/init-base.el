@@ -141,5 +141,6 @@
 ;(set-default-font "Monaco-14")
 ;(set-default-font "Inconsolata-13")
 ;(set-default-font "Anonymous Pro-15")
-(set-fontset-font "fontset-default" 'unicode '("WenQuanYi Zen Hei" . "unicode-ttf"))
+;;; shade by mospan, 2016-05-18, use in emacs24.5 error
+;(set-fontset-font "fontset-default" 'unicode '("WenQuanYi Zen Hei" . "unicode-ttf"))
 
