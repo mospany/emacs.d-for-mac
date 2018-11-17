@@ -696,44 +696,44 @@ original buffer content
 
 ;;--------------------------w3m----------------------------------------------
 ;需先安装: sudo apt-get install w3m
-(add-to-list 'load-path "~/.emacs.d/lib/emacs-w3m/share/emacs/site-lisp/w3m")
-(require 'w3m-load)
-(require 'mime-w3m)
-;(require 'w3m-settings)
-;; w3m
-;load & init 
-(autoload 'w3m "w3m" "interface for w3m on emacs" t)
-(autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
-(autoload 'w3m-search "w3m-search" "Search words using emacs-w3m." t)
-;settings
-;; 设置w3m主页
-(setq w3m-home-page "https://www.google.com.hk")
-;; 默认显示图片
-(setq w3m-default-display-inline-images t)
-(setq w3m-default-toggle-inline-images t)
-;; 使用cookies
-(setq w3m-use-cookies t)
-;;设定w3m运行的参数，分别为使用cookie和使用框架  
-(setq w3m-command-arguments '("-cookie" "-F"))               
-;; 使用w3m作为默认浏览器
-(setq browse-url-browser-function 'w3m-browse-url)                
-(setq w3m-view-this-url-new-session-in-background t)
-;;显示图标                                                      
-(setq w3m-show-graphic-icons-in-header-line t)                  
-(setq w3m-show-graphic-icons-in-mode-line t) 
-;;C-c C-p 打开，这个好用                                        
-(setq w3m-view-this-url-new-session-in-background t)  
-
-(add-hook 'w3m-fontify-after-hook 'remove-w3m-output-garbages)                                    
-(defun remove-w3m-output-garbages ()                            
-  "去掉w3m输出的垃圾."                                            
-  (interactive)                                                   
-  (let ((buffer-read-only))                                       
-    (setf (point) (point-min))                                      
-    (while (re-search-forward "[\200-\240]" nil t)                  
-      (replace-match " "))                                            
-    (set-buffer-multibyte t))                                       
-  (set-buffer-modified-p nil))
+;(add-to-list 'load-path "~/.emacs.d/lib/emacs-w3m/share/emacs/site-lisp/w3m")
+;(require 'w3m-load)
+;(require 'mime-w3m)
+;;(require 'w3m-settings)
+;;; w3m
+;;load & init 
+;(autoload 'w3m "w3m" "interface for w3m on emacs" t)
+;(autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
+;(autoload 'w3m-search "w3m-search" "Search words using emacs-w3m." t)
+;;settings
+;;; 设置w3m主页
+;(setq w3m-home-page "https://www.google.com.hk")
+;;; 默认显示图片
+;(setq w3m-default-display-inline-images t)
+;(setq w3m-default-toggle-inline-images t)
+;;; 使用cookies
+;(setq w3m-use-cookies t)
+;;;设定w3m运行的参数，分别为使用cookie和使用框架  
+;(setq w3m-command-arguments '("-cookie" "-F"))               
+;;; 使用w3m作为默认浏览器
+;(setq browse-url-browser-function 'w3m-browse-url)                
+;(setq w3m-view-this-url-new-session-in-background t)
+;;;显示图标                                                      
+;(setq w3m-show-graphic-icons-in-header-line t)                  
+;(setq w3m-show-graphic-icons-in-mode-line t) 
+;;;C-c C-p 打开，这个好用                                        
+;(setq w3m-view-this-url-new-session-in-background t)  
+;
+;(add-hook 'w3m-fontify-after-hook 'remove-w3m-output-garbages)                                    
+;(defun remove-w3m-output-garbages ()                            
+;  "去掉w3m输出的垃圾."                                            
+;  (interactive)                                                   
+;  (let ((buffer-read-only))                                       
+;    (setf (point) (point-min))                                      
+;    (while (re-search-forward "[\200-\240]" nil t)                  
+;      (replace-match " "))                                            
+;    (set-buffer-multibyte t))                                       
+;  (set-buffer-modified-p nil))
 
 ;;--------------------------------graphviz dot mode-------------------------------------------
 ;; Graphviz dot mode
@@ -997,7 +997,7 @@ original buffer content
 ;登陆https://www.evernote.com/api/DeveloperToken.action生成token
 (setq evernote-developer-token "S=s272:U=224c205:E=14b9008abf2:C=14438577ff4:P=1cd:A=en-devtoken:V=2:H=727256d10ec5221a3007fda0bf572af7")
 (setq evernote-enml-formatter-command '("w3m" "-dump" "-I" "UTF8" "-O" "UTF8"))
-(require 'evernote-mode)
+;(require 'evernote-mode) ;; shade by mosp for emacs26
 
 ;;emacs24内置cedet
 ;(require 'cedet)
@@ -1091,42 +1091,42 @@ original buffer content
 (add-hook 'go-mode-hook 'my-c-mode-auto-pair)
 ;;;输入左边的括号，就会自动补全右边的部分.包括(), "", [] , {} , 等等。
 
-;;-------------------------org2blog--------------------------------------
-(setq load-path (cons "~/.emacs.d/lib/org2blog/" load-path))
-(require 'org2blog-autoloads)
-(require 'xml-rpc)
-(require 'org2blog-autoloads)
-;(setq url-using-proxy t)
-;(setq url-proxy-services '(("http" . "our-proxy:8118")))
-;(setq url-proxy-services '(("http" . "127.0.0.1:80")))
-(setq org2blog/wp-blog-alist
-      `(("wordpress"
-         :url "http://mosp.wordpress.com.cn/xmlrpc.php"
-         :username "mosp"
-         :password "8tmdCfSmZiSJ"
-         :keep-new-lines t
-         :confirm t
-         :wp-code nil
-         :tags-as-categories nil)
-        ("cnblogs"
-         :url "http://www.cnblogs.com/mosp/services/metaWeblog.aspx"
-         :username "mosp"
-         ;:default-categories ("emacs")
-         :keep-new-lines t
-         :confirm t
-         :wp-code nil
-         :tags-as-categories nil)
-        ))
-
-(setq org2blog/wp-buffer-template
-      "#+DATE: %s
-#+STYLE: <link rel=\"stylesheet\" type=\"text/css\" href=\"~/.emacs.d/style/style.css\" />
-#+OPTIONS: ^:{} H:5
-#+CATEGORY: Heart
-#+TAGS:
-#+PERMALINK:
-#+TITLE:
-\n")
+;;;-------------------------org2blog--------------------------------------
+;(setq load-path (cons "~/.emacs.d/lib/org2blog/" load-path))
+;(require 'org2blog-autoloads)
+;(require 'xml-rpc)
+;(require 'org2blog-autoloads)
+;;(setq url-using-proxy t)
+;;(setq url-proxy-services '(("http" . "our-proxy:8118")))
+;;(setq url-proxy-services '(("http" . "127.0.0.1:80")))
+;(setq org2blog/wp-blog-alist
+;      `(("wordpress"
+;         :url "http://mosp.wordpress.com.cn/xmlrpc.php"
+;         :username "mosp"
+;         :password "8tmdCfSmZiSJ"
+;         :keep-new-lines t
+;         :confirm t
+;         :wp-code nil
+;         :tags-as-categories nil)
+;        ("cnblogs"
+;         :url "http://www.cnblogs.com/mosp/services/metaWeblog.aspx"
+;         :username "mosp"
+;         ;:default-categories ("emacs")
+;         :keep-new-lines t
+;         :confirm t
+;         :wp-code nil
+;         :tags-as-categories nil)
+;        ))
+;
+;(setq org2blog/wp-buffer-template
+;      "#+DATE: %s
+;#+STYLE: <link rel=\"stylesheet\" type=\"text/css\" href=\"~/.emacs.d/style/style.css\" />
+;#+OPTIONS: ^:{} H:5
+;#+CATEGORY: Heart
+;#+TAGS:
+;#+PERMALINK:
+;#+TITLE:
+;\n")
 ;;-------------------------cnblogs----------------------------------------------------
 ;由于cnblogs支持api比较少，使用org2blog会有些问题，写cnblogs时可以用cnblogs的配置
 ;先设置博客M-x cnblogs-setup-blog，其中blog ID就是博客地址中的那个博客名称（如我的就是 Open_Source  ）。
@@ -1213,7 +1213,7 @@ original buffer content
 
 ;;-------git-emacs----------------------------------
 (add-to-list 'load-path "~/.emacs.d/lib/git-emacs/")
-(require 'git-emacs)
+;(require 'git-emacs) ;; shade by mosp for emacs26
 
 ;; Use the command j to list common directories and to jump to them.
 (require 'eshell-autojump)
