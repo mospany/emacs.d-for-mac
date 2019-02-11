@@ -2,227 +2,73 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Jun  8 18:36:52 2018
+;; Created Mon Feb 11 13:49:53 2019
 ;; Desktop file format version 206
-;; Emacs version 24.5.1
+;; Emacs version 26.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (23322 23620 726538 0) (desktop . "206") "moshengping@moshengpingdeMacBook-Pro.local" nil nil ((((tty-type . "xterm-256color") (tty . "/dev/tty") (display-type . color) (background-mode . dark) (foreground-color . "#f8f8f0") (menu-bar-lines . 0) (background-color . "#1b1d1e") (tool-bar-lines . 0) (font . "tty") (height . 46) (width . 158) (modeline . t) (unsplittable) (cursor-color . "Red") (cursor-type . bar) (frameset--id . "334F-3250-5208-9902") (frameset--mini t) (minibuffer . t)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 2) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 4) (min-pixel-width . 10) (min-pixel-height-ignore . 3) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 1) (min-pixel-width-safe . 2)) leaf (pixel-width . 158) (pixel-height . 45) (total-width . 158) (total-height . 45) (normal-height . 1.0) (normal-width . 1.0) (buffer "edns.c" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 6991) (start . 6233))))])
+(setq desktop-saved-frameset [frameset 1 (23649 3329 165866 0) (desktop . "208") "mosp@mospdeMacBook-Pro.local" nil nil ((((minibuffer . t) (tty-type . "xterm-256color") (tty . "/dev/tty") (display-type . color) (background-mode . dark) (foreground-color . "#f8f8f0") (menu-bar-lines . 0) (background-color . "#1b1d1e") (tool-bar-lines . 0) (font . "tty") (height . 61) (width . 272) (modeline . t) (unsplittable) (cursor-color . "Red") (cursor-type . box) (frameset--id . "C54B-291B-DB81-F561") (frameset--mini t)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 4) (min-pixel-width . 20) (min-pixel-height-ignore . 3) (min-pixel-width-ignore . 4) (min-pixel-height-safe . 1) (min-pixel-width-safe . 4)) hc (pixel-width . 272) (pixel-height . 60) (total-width . 272) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 136) (pixel-height . 60) (total-width . 136) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5) (buffer "g.go<web>" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 226) (start . 1))) (leaf (last . t) (pixel-width . 136) (pixel-height . 60) (total-width . 136) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5) (buffer "*Compile-Log*" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 63) (start . 1)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring '("f6" "global" "home.org" "org" "font-lock-type-face" "kbd" "evernote" "bh" "test" "org-mode" "font" "unset" "shift" "tab" "org-mode-hook" "setq"))
-(setq regexp-search-ring '("q" "\\_<subtype\\_>" "\\_<1\\_>" "get_ai_count" "mallo" "j" "kni_alloc" "kni_malloc" "num_" "IPV4" "resjj" "rte_memcpy" "rte_m" "system" "$?" "rc_local"))
-(setq register-alist (list '(105) '(119) '(113 . "j") '(t . "mes]\n") '(102 . "struct rte_eth_xstats_name_off {\n	char name[RTE_ETH_XSTATS_NAME_SIZE];\n") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook `(lambda nil (set-marker ,mk ,nil (get-buffer ," *temp*")))) mk)) '(48 . "void dn_dump_top_node(void)\n{\n    int i;\n    struct timespec ts;\n    struct dns_domain *domain;\n    int top_count;\n    \n    top_count = dn_top_heap.size;\n    ts = current_kernel_time();\n\n    memset(dn_top_log_buf, 0, sec_global_cfg.top_count * sizeof(struct dn_top_buf));\n    for(i = 0; i < top_count; i++)\n    {\n        domain = (struct dns_domain *)dn_top_heap.ptrs[i];\n        \n        dn_top_log_buf[i].time = (u32)ts.tv_sec;\n        dn_top_log_buf[i].top_qps = domain->pre_top_counter;\n        memcpy(dn_top_log_buf[i].domain, domain->domain_name, strlen(domain->domain_name)+1);\n    }\n\n    return;\n}\n\nvoid dn_compare_node_init(void)\n{\n    u32 i;\n    struct dns_domain *domain;\n\n    for(i = 0; i < dn_top_heap.size; i++)\n    {\n        domain = (struct dns_domain *)dn_top_heap.ptrs[i];\n        if(unlikely(domain->del_flag))\n        {            \n            spin_lock(&(sec_domain_hashtab.hash_mutex));\n            list_del_rcu(&domain->domain_list);\n            INIT_LIST_HEAD(&domain->domain_list);\n            sec_domain_hashtab.domain_count--;\n            spin_unlock(&(sec_domain_hashtab.hash_mutex));\n            \n            kfree(domain->domain_name);\n            kfree(domain);\n            domain = NULL;\n        }\n        else\n        {\n            spin_lock(&domain->dn_mutex);\n            domain->top_flag = 0;\n            spin_unlock(&domain->dn_mutex);\n        }\n    }\n    \n    dn_top_heap.size = 0;\n    \n    return;\n}\n\n")))
-(setq file-name-history '("/Users/moshengping/work/fw/160519/task/kans/mysrc/trunk/src/kern_src/edns.c" "~/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/glb_sec_error.h" "~/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/find_msg.h" "~/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/hash.h" "~/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/dns_hdr.h" "~/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/prio_heap.h" "~/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/dns_domain.h" "~/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/global.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_msg_system.h" "/usr/include/netinet6/in6.h" "/usr/include/sys/_types/_o_dsync.h" "/usr/include/sys/_types/_o_sync.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_hdr.h" "/usr/include/sys/_types/_filesec_t.h" "/usr/include/sys/_types/_s_ifmt.h" "/usr/include/sys/fcntl.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_rdset.h" "/Library/Developer/CommandLineTools/usr/lib/clang/7.3.0/include/stdbool.h" "/usr/include/sys/_select.h" "/usr/include/sys/_types/_sigset_t.h" "/usr/include/sys/_types/_timeval.h" "/usr/include/sys/_types/_timespec.h" "/usr/include/sys/_types/_seek_set.h" "/usr/include/sys/_types/_posix_vdisable.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_buf.h" "/usr/include/sys/stat.h" "/usr/include/arpa/inet.h" "/usr/include/fcntl.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_question.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_zone.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_rrset.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_view.h" "/usr/include/gethostuuid.h" "/usr/include/sys/_types/_uuid_t.h" "/usr/include/sys/select.h" "/usr/include/sys/unistd.h" "/usr/include/strings.h" "/usr/include/sys/stdio.h" "/usr/include/sys/_types/_null.h" "/usr/include/sys/_types/_va_list.h" "/usr/include/_types.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_msg_zone.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_msg_rrset.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_msg_rdset.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_error.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_msg.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_base.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_global.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_types.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_rdata.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_domain_hashtab.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_zone_hashtab.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_domain.h" "~/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/dns_edns.h" "/usr/include/unistd.h" "/usr/include/string.h" "/usr/include/stdio.h" "~/work/fw/160519/task/kans/mysrc/trunk/src/kern_src/hash.h" "/usr/include/sys/_endian.h" "/usr/include/i386/_types.h" "/usr/include/i386/_param.h" "/usr/include/i386/endian.h" "/usr/include/i386/types.h" "/usr/include/sys/_posix_availability.h" "/usr/include/sys/_symbol_aliasing.h" "/usr/include/sys/_pthread/_pthread_types.h" "/usr/include/machine/_types.h" "/usr/include/sys/_types/_iovec_t.h" "/usr/include/sys/_types/_socklen_t.h" "/usr/include/sys/_types/_sa_family_t.h" "/usr/include/Availability.h" "/usr/include/machine/_param.h" "/usr/include/sys/_types/_fsfilcnt_t.h" "/usr/include/sys/_types/_fsblkcnt_t.h" "/usr/include/sys/_pthread/_pthread_key_t.h" "/usr/include/sys/_pthread/_pthread_t.h" "/usr/include/sys/_pthread/_pthread_rwlockattr_t.h" "/usr/include/sys/_pthread/_pthread_rwlock_t.h" "/usr/include/sys/_pthread/_pthread_once_t.h" "/usr/include/sys/_pthread/_pthread_mutexattr_t.h" "/usr/include/sys/_pthread/_pthread_mutex_t.h" "/usr/include/sys/_pthread/_pthread_condattr_t.h" "/usr/include/sys/_pthread/_pthread_cond_t.h" "/usr/include/sys/_pthread/_pthread_attr_t.h" "/usr/include/sys/_types/_fd_copy.h" "/usr/include/sys/_types/_fd_isset.h" "/usr/include/sys/_types/_fd_zero.h" "/usr/include/sys/_types/_fd_clr.h" "/usr/include/sys/_types/_fd_set.h" "/usr/include/sys/_types/_fd_setsize.h" "/usr/include/sys/_types/_fd_def.h" "/usr/include/sys/_types/_errno_t.h" "/usr/include/sys/_types/_rsize_t.h" "/usr/include/sys/_types/_suseconds_t.h" "/usr/include/sys/_types/_useconds_t.h" "/usr/include/sys/_types/_ssize_t.h" "/usr/include/sys/_types/_size_t.h" "/usr/include/sys/_types/_clock_t.h" "/usr/include/sys/_types/_uid_t.h" "/usr/include/sys/_types/_off_t.h"))
+(setq regexp-search-ring '("\\_<webTaskProducer\\_>" "\\_<getWebTaskProducer\\_>" "init" "\\_<ngx_cache_purge_process_handler\\_>" "\\_<ngx_http_variable_msec_first\\_>" "\\_<ngx_http_traffic_log_ant_add_var_slot\\_>" "\\_<ngx_http_traffic_log_handler\\_>" "\\_<ngx_http_log_interval\\_>" "handler" "\\_<ngx_http_traffic_log_filter_module\\_>" "\\_<ngx_http_traffic_log_filter_module_ctx\\_>" "\\_<ngx_http_traffic_log_filter_init\\_>" "\\_<ngx_http_traffic_log_get_ctx\\_>" "\\_<ngx_http_traffic_log_header_filter\\_>" "\\_<ngx_http_top_header_filter\\_>" "\\_<ngx_http_traffic_log_add_variables\\_>"))
+(setq register-alist (list '(105) '(119) '(113 . "j") '(t . "mes]\n") '(102 . "struct rte_eth_xstats_name_off {\n	char name[RTE_ETH_XSTATS_NAME_SIZE];\n") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook `(lambda nil (set-marker ,mk ,nil (get-buffer ," *temp*")))) mk)) '(48 . "    def modProtocolFollow(self, host, data):\n        if not self._username_value or not self.request_key:\n            return -1,\"‘²Î‘Êý‘·Ç‘·¨\"\n        now = str(int(time.time()))\n        plaintext = '{}{}{}'.format(self._username_value, self.request_key, now)\n        sign = hashlib.md5(plaintext.encode(\"utf-8\")).hexdigest()\n        request_json = {\"timestamp\": str(int(time.time())), \"signature\": sign, \"username\": self._username_value,\n                        \"domain_name\": host.get('domain'), \"data\":data} \n        \n        with jsonsendto(self.protocolFollow_url, request_json) as res:                             \n            if res is not None:\n                if res.getcode() == 200:\n                    body = json.loads(res.read().decode(\"UTF-8\"))                              \n                    return body.get(\"result\"),body.get(\"msg\")                                  \n        \n        return -1,\"‘²Ù‘×÷‘Ê§‘°Ü\"    ")))
+(setq file-name-history '("/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/web/g.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/g.go" "~/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/monitor_task.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/web/producer.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/common/alivecheck.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/common/g.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/monitor_ip.go" "~/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/strategy.go" "~/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/alarm/alarm.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/util/ipbase/ipbase.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/g/var.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/alarm/g.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/g.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/util/mgo/mgo.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/db/mgo.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/g/cfg.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/api/alarmhistory.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/app/pcm_center/pcm_center.conf" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/group.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/config.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/convertMessage.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/shatacloud.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/itemCloud.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/pingancloud.py" "~/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_enhanced_module.h" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/app/pcm_center/pcm_center.go" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_purge_module.c" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_enhanced_module.c" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_enhanced_module.h" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/config" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_traffic_log_module/ngx_http_traffic_log_filter_module.c" "/Users/mosp/work/pingan/task/cdn-projects/mciw/shata/dispatcher.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/main.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/main.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/http_server.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/validator.py" "/Users/mosp/work/pingan/task/cdn-projects/mciw/configs.py" "~/work/pingan/task/cdn-projects/mciw/shata/dispatcher.py" "/Users/mosp/work/pingan/task/cdn-projects/mciw/shata/__init__.py" "~/work/pingan/task/cdn-projects/mciw/configs.py" "/Users/mosp/work/pingan/task/cdn-projects/mciw/main.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/config.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/webs/operate.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/http_server.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/main.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/main.py" "~/study/myblog/mospan-hugo-blog/content/post/2017/2017-03-01-personal-interview-questions.md" "/Users/mosp/study/myblog/mospan-hugo-blog/content/post/2017/2017-03-01-personal-interview-questions.orig" "~/work/pingan/task/cdn-projects/ag/lib/tvmining_list_auth.py" "~/work/pingan/task/cdn-projects/ag/lib/pinganauth_tianmai.py" "~/work/pingan/task/cdn-projects/ag/lib/hulu.py" "~/work/pingan/task/cdn-projects/ag/lib/pinganauth.py" "~/work/pingan/task/cdn-projects/ag/lib/define.py" "~/work/pingan/task/cdn-projects/ag/lib/pinganconf.py" "~/work/pingan/task/cdn-projects/ag/lib/voole.py" "~/work/pingan/task/cdn-projects/ag/lib/moive1905.py" "~/work/pingan/task/cdn-projects/ag/lib/wasu.py" "~/work/pingan/task/cdn-projects/ag/lib/pingan.py" "~/work/pingan/task/cdn-projects/ag/lib/auth_keys_receive.py" "~/work/pingan/task/cdn-projects/ag/lib/server.py" "~/work/pingan/task/cdn-projects/ag/lib/service.py" "~/work/pingan/task/cdn-projects/ag/lib/common.py" "~/work/pingan/task/cdn-projects/ag/lib/bottle_memcache.py" "/Users/mosp/work/pingan/task/cdn-projects/ag/conf/ag.conf" "/Users/mosp/work/pingan/task/cdn-projects/ag/cdn-authentication-gateway-service.py" "/Users/mosp/work/pingan/task/cdn-projects/ag/ag.sh" "/Users/mosp/work/pingan/task/cdn-projects/ag/version.txt" "/Users/mosp/work/pingan/task/cdn-projects/ag/Readme.md" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/shatacloud.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/config.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/pingancloud.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/itemoper.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/db.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/timed_redis_sync.py" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/lualib/ant/frame.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/lualib/ant/loadconfig.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/hsm/conf/setslice.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/hsm/conf/hsm.conf" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/webs/operItem.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/utils.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/cert_sync.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/db.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/webs/domain.py" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/lualib/ant/request.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/lualib/ant/healthcheck.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/hsm/conf/access.lua" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/config.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/webs/domain.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/timed_redis_sync.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/cert_sync.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/mini_cdn_config.json" "~/work/pingan/task/cdn-projects/cpa/5.0.5.4/lib/service.py" "~/work/pingan/task/cdn-projects/cpa/5.0.5.4/lib/common.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/itemoper.py" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/uce/conf/uce.conf"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/kans/mysrc/trunk/src/kern_src/edns.c"
-  "edns.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode yas/minor-mode hi-lock-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  6991
-  '(4521 nil)
+  "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/web/g.go"
+  "g.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  226
+  '(226 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23649 3292 620881 0) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
 
 (desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/kans/mysrc/trunk/src/kern_src/dns_buf.c"
-  "dns_buf.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  3500
-  '(1623 nil)
+  "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/web/producer.go"
+  "producer.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1937
+  '(1937 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23649 3279 295793 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
 
 (desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/kans/mysrc/trunk/src/kern_src/dns_response.c"
-  "dns_response.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  22087
-  '(19745 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/kans/mysrc/trunk/src/kern_src/kans_main.c"
-  "kans_main.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  8629
+  "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/g.go"
+  "g.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  455
   '(nil nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-file-coding-system . chinese-gb18030-unix) (overwrite-mode)))
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23648 58758 385637 285000) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
 
 (desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/kans/mysrc/trunk/src/kern_src/kans_sec.c"
-  "kans_sec.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  13666
-  '(10555 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/usr/include/sys/_types/_time_t.h"
-  "_time_t.h"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  2
-  '(nil nil)
-  t
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_msg_zone.c"
-  "sans_msg_zone.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  11126
-  '(11126 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . chinese-gb18030-dos) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_msg_priips.h"
-  "sans_msg_priips.h"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  1094
-  '(1094 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_msg_priips.c"
-  "sans_msg_priips.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode hi-lock-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  6304
-  '(8687 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/fastNP/mysrc/trunk/src/service/sansd/sans_msg_system.c"
-  "sans_msg_system.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  1099
+  "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/app/pcm_center/pcm_center.go"
+  "pcm_center.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  768
   '(nil nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-dos) (overwrite-mode)))
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23648 54700 255676 285000) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
 
 (desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/top_qps.c"
-  "top_qps.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  2
-  '(3871 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/glb_sec_proc.c"
-  "glb_sec_proc.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  1
-  '(19917 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . iso-latin-1-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/top_qps.h"
-  "top_qps.h"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  178
-  '(178 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/glb_sec_proc.h"
-  "glb_sec_proc.h"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  135
-  '(135 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/glb_sec_update.h"
-  "glb_sec_update.h"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  1481
-  '(1481 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . chinese-gb18030-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/Users/moshengping/work/fw/160519/task/glb/src/glb/sanbox/glb_ddos/kern_src/glb_sec_update.c"
-  "glb_sec_update.c"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  19253
-  '(19294 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/usr/include/AvailabilityInternal.h"
-  "AvailabilityInternal.h"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  1731416
+  "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/g.go"
+  "g.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  211
   '(nil nil)
-  t
   nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/usr/include/sys/_types/_int8_t.h"
-  "_int8_t.h"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  1324
-  '(nil nil)
-  t
   nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
-
-(desktop-create-buffer 206
-  "/usr/include/netinet/in.h"
-  "in.h"
-  'c-mode
-  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
-  1329
-  '(nil nil)
-  t
-  nil
-  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23648 54677 615204 285000) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
 

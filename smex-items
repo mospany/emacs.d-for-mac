@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ sr-speedbar-toggle
+ speedbar
+ go-mode
  abs-indent
  abs-unindent
  list-packages
  dig
- ping
- cd
- erc-tls
 )
 
 ;; ----- smex-data -----
@@ -24,4 +24,7 @@
  (helm-M-x . 1)
  (abs-indent . 4)
  (abs-unindent . 1)
+ (go-mode . 1)
+ (speedbar . 1)
+ (sr-speedbar-toggle . 2)
 )

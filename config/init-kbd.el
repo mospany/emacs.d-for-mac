@@ -206,11 +206,12 @@
 (global-set-key [f4] 'eshell)
 (global-set-key [C-f9] 'ecb-activate)
 (global-set-key [S-f9] 'ecb-deactivate)
-(global-set-key [C-f10] 'sr-speedbar-toggle) ;;sr-speedbar按键绑定
+(global-set-key [C-f10] 'imenu-list-smart-toggle) ;;imenu-list-smart-toggle按键绑定
+(global-set-key [S-f10] 'sr-speedbar-toggle) ;;sr-speedbar按键绑定
 (global-set-key [C-f11] 'ediff)
 (global-set-key [S-f11] 'ediff-directories)
-(global-set-key [f12] 'git-status)
-(global-set-key [S-f12] 'svn-status)
+(global-set-key [f12] 'svn-status)
+(global-set-key [S-f12] 'git-status)
 
 ;;shell配置
 (setq shell-file-name "/bin/zsh")
@@ -369,6 +370,11 @@
   )
 
 (add-hook 'go-mode-hook 'go-key-bindings )
+(custom-set-variables
+ '(go-add-tags-style 'lower-camel-case))
+
+;(with-eval-after-load 'go-mode
+;  (define-key go-mode-map (kbd "C-c t") #'go-add-tags))
 
 ;--------------阅读代码快捷键-------------------------------------
 ;;cscope python-mode
@@ -380,10 +386,10 @@
 (define-key c-mode-base-map [(f7)] 'cscope-pop-mark)
 (define-key c-mode-base-map [(f8)] 'cscope-find-global-definition-no-prompting)
 ;;cscope go-mode
-(define-key go-mode-map [(f7)] 'cscope-pop-mark)
-(define-key go-mode-map [(f8)] 'cscope-find-global-definition-no-prompting)
-(define-key go-mode-map [(C-f7)] 'gocscope-pop-mark)
-(define-key go-mode-map [(C-f8)] 'godef-jump)
+(define-key go-mode-map [(C-f7)] 'cscope-pop-mark)
+(define-key go-mode-map [(C-f8)] 'cscope-find-global-definition-no-prompting)
+(define-key go-mode-map [(f7)] 'gocscope-pop-mark)
+(define-key go-mode-map [(f8)] 'godef-jump)
 
 ;;swith-window
 (global-set-key (kbd "C-x o") 'switch-window)

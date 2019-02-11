@@ -287,6 +287,9 @@
 (require 'go-mode-setting)
 (require 'go-autocomplete)
 (require 'auto-complete-config)
+(require 'go-guru)
+(require 'go-add-tags)
+(require 'gotests)
 
 ;; 高亮局部变量，和sourceinsight类似(感觉颜色有点别扭，先用试用一下再说 2011-11-24)
 (require 'zjl-hl)
@@ -765,6 +768,7 @@ original buffer content
 ;常用属性格式
 ;#+STYLE: <link rel="stylesheet" type="text/css" href="/root/.emacs.d/style/style.css" />
 ;#+OPTIONS: ^:{} H:5 toc:5
+(require 'ox-md nil t)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (add-hook 'org-mode-hook 'turn-on-font-lock)
 ;让不同级别的标题采用不同大小的字体 add by mosp, 2015/08/22 18:02:11 
@@ -1247,3 +1251,5 @@ original buffer content
 ;;---------emacs blog form org-mode to hugo -------------------------------
 (require 'org2hugo-single)
 (require 'org2hugo-subtree)
+
+(require 'imenu-list)
