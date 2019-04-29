@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ go-add-tags
  sr-speedbar-toggle
  speedbar
  go-mode
  abs-indent
  abs-unindent
  list-packages
- dig
 )
 
 ;; ----- smex-data -----
@@ -27,4 +27,5 @@
  (go-mode . 1)
  (speedbar . 1)
  (sr-speedbar-toggle . 2)
+ (go-add-tags . 13)
 )

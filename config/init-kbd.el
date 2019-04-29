@@ -370,8 +370,10 @@
   )
 
 (add-hook 'go-mode-hook 'go-key-bindings )
+; snake-case lower-camel-case upper-camel-case original
 (custom-set-variables
- '(go-add-tags-style 'lower-camel-case))
+ '(go-add-tags-style 'snake-case))
+; '(go-add-tags-style 'lower-camel-case))
 
 ;(with-eval-after-load 'go-mode
 ;  (define-key go-mode-map (kbd "C-c t") #'go-add-tags))

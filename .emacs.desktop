@@ -2,73 +2,318 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Feb 11 13:49:53 2019
-;; Desktop file format version 206
+;; Created Mon Apr 29 17:36:48 2019
+;; Desktop file format version 208
 ;; Emacs version 26.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (23649 3329 165866 0) (desktop . "208") "mosp@mospdeMacBook-Pro.local" nil nil ((((minibuffer . t) (tty-type . "xterm-256color") (tty . "/dev/tty") (display-type . color) (background-mode . dark) (foreground-color . "#f8f8f0") (menu-bar-lines . 0) (background-color . "#1b1d1e") (tool-bar-lines . 0) (font . "tty") (height . 61) (width . 272) (modeline . t) (unsplittable) (cursor-color . "Red") (cursor-type . box) (frameset--id . "C54B-291B-DB81-F561") (frameset--mini t)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 4) (min-pixel-width . 20) (min-pixel-height-ignore . 3) (min-pixel-width-ignore . 4) (min-pixel-height-safe . 1) (min-pixel-width-safe . 4)) hc (pixel-width . 272) (pixel-height . 60) (total-width . 272) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 136) (pixel-height . 60) (total-width . 136) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5) (buffer "g.go<web>" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 226) (start . 1))) (leaf (last . t) (pixel-width . 136) (pixel-height . 60) (total-width . 136) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5) (buffer "*Compile-Log*" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 63) (start . 1)))))])
+(setq desktop-saved-frameset [frameset 1 (23750 50608 425906 0) (desktop . "208") "mosp@mospdeMacBook-Pro.local" nil nil ((((minibuffer . t) (tty-type . "xterm-256color") (tty . "/dev/tty") (display-type . color) (background-mode . dark) (foreground-color . "#f8f8f0") (menu-bar-lines . 0) (background-color . "#1b1d1e") (tool-bar-lines . 0) (font . "tty") (height . 61) (width . 272) (modeline . t) (unsplittable) (cursor-color . "Red") (cursor-type . box) (frameset--id . "A318-F2A7-26A2-24A1") (frameset--mini t)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 4) (min-pixel-width . 20) (min-pixel-height-ignore . 3) (min-pixel-width-ignore . 4) (min-pixel-height-safe . 1) (min-pixel-width-safe . 4)) hc (pixel-width . 272) (pixel-height . 60) (total-width . 272) (total-height . 60) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 136) (pixel-height . 60) (total-width . 136) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5) (buffer "checkPlatforms.go" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 115) (start . 1))) (leaf (last . t) (pixel-width . 136) (pixel-height . 60) (total-width . 136) (total-height . 60) (normal-height . 1.0) (normal-width . 0.5) (buffer "*Compile-Log*" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 63) (start . 1)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring '("f6" "global" "home.org" "org" "font-lock-type-face" "kbd" "evernote" "bh" "test" "org-mode" "font" "unset" "shift" "tab" "org-mode-hook" "setq"))
-(setq regexp-search-ring '("\\_<webTaskProducer\\_>" "\\_<getWebTaskProducer\\_>" "init" "\\_<ngx_cache_purge_process_handler\\_>" "\\_<ngx_http_variable_msec_first\\_>" "\\_<ngx_http_traffic_log_ant_add_var_slot\\_>" "\\_<ngx_http_traffic_log_handler\\_>" "\\_<ngx_http_log_interval\\_>" "handler" "\\_<ngx_http_traffic_log_filter_module\\_>" "\\_<ngx_http_traffic_log_filter_module_ctx\\_>" "\\_<ngx_http_traffic_log_filter_init\\_>" "\\_<ngx_http_traffic_log_get_ctx\\_>" "\\_<ngx_http_traffic_log_header_filter\\_>" "\\_<ngx_http_top_header_filter\\_>" "\\_<ngx_http_traffic_log_add_variables\\_>"))
-(setq register-alist (list '(105) '(119) '(113 . "j") '(t . "mes]\n") '(102 . "struct rte_eth_xstats_name_off {\n	char name[RTE_ETH_XSTATS_NAME_SIZE];\n") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook `(lambda nil (set-marker ,mk ,nil (get-buffer ," *temp*")))) mk)) '(48 . "    def modProtocolFollow(self, host, data):\n        if not self._username_value or not self.request_key:\n            return -1,\"‘²Î‘Êý‘·Ç‘·¨\"\n        now = str(int(time.time()))\n        plaintext = '{}{}{}'.format(self._username_value, self.request_key, now)\n        sign = hashlib.md5(plaintext.encode(\"utf-8\")).hexdigest()\n        request_json = {\"timestamp\": str(int(time.time())), \"signature\": sign, \"username\": self._username_value,\n                        \"domain_name\": host.get('domain'), \"data\":data} \n        \n        with jsonsendto(self.protocolFollow_url, request_json) as res:                             \n            if res is not None:\n                if res.getcode() == 200:\n                    body = json.loads(res.read().decode(\"UTF-8\"))                              \n                    return body.get(\"result\"),body.get(\"msg\")                                  \n        \n        return -1,\"‘²Ù‘×÷‘Ê§‘°Ü\"    ")))
-(setq file-name-history '("/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/web/g.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/g.go" "~/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/monitor_task.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/web/producer.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/common/alivecheck.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/common/g.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/monitor_ip.go" "~/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/strategy.go" "~/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/alarm/alarm.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/util/ipbase/ipbase.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/g/var.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/alarm/g.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/g.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/util/mgo/mgo.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/db/mgo.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/g/cfg.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/api/alarmhistory.go" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/app/pcm_center/pcm_center.conf" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/group.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/config.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/convertMessage.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/shatacloud.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/itemCloud.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/pingancloud.py" "~/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_enhanced_module.h" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/app/pcm_center/pcm_center.go" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_purge_module.c" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_enhanced_module.c" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_enhanced_module.h" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/config" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_traffic_log_module/ngx_http_traffic_log_filter_module.c" "/Users/mosp/work/pingan/task/cdn-projects/mciw/shata/dispatcher.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/main.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/main.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/http_server.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/validator.py" "/Users/mosp/work/pingan/task/cdn-projects/mciw/configs.py" "~/work/pingan/task/cdn-projects/mciw/shata/dispatcher.py" "/Users/mosp/work/pingan/task/cdn-projects/mciw/shata/__init__.py" "~/work/pingan/task/cdn-projects/mciw/configs.py" "/Users/mosp/work/pingan/task/cdn-projects/mciw/main.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/config.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/webs/operate.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/http_server.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/main.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/main.py" "~/study/myblog/mospan-hugo-blog/content/post/2017/2017-03-01-personal-interview-questions.md" "/Users/mosp/study/myblog/mospan-hugo-blog/content/post/2017/2017-03-01-personal-interview-questions.orig" "~/work/pingan/task/cdn-projects/ag/lib/tvmining_list_auth.py" "~/work/pingan/task/cdn-projects/ag/lib/pinganauth_tianmai.py" "~/work/pingan/task/cdn-projects/ag/lib/hulu.py" "~/work/pingan/task/cdn-projects/ag/lib/pinganauth.py" "~/work/pingan/task/cdn-projects/ag/lib/define.py" "~/work/pingan/task/cdn-projects/ag/lib/pinganconf.py" "~/work/pingan/task/cdn-projects/ag/lib/voole.py" "~/work/pingan/task/cdn-projects/ag/lib/moive1905.py" "~/work/pingan/task/cdn-projects/ag/lib/wasu.py" "~/work/pingan/task/cdn-projects/ag/lib/pingan.py" "~/work/pingan/task/cdn-projects/ag/lib/auth_keys_receive.py" "~/work/pingan/task/cdn-projects/ag/lib/server.py" "~/work/pingan/task/cdn-projects/ag/lib/service.py" "~/work/pingan/task/cdn-projects/ag/lib/common.py" "~/work/pingan/task/cdn-projects/ag/lib/bottle_memcache.py" "/Users/mosp/work/pingan/task/cdn-projects/ag/conf/ag.conf" "/Users/mosp/work/pingan/task/cdn-projects/ag/cdn-authentication-gateway-service.py" "/Users/mosp/work/pingan/task/cdn-projects/ag/ag.sh" "/Users/mosp/work/pingan/task/cdn-projects/ag/version.txt" "/Users/mosp/work/pingan/task/cdn-projects/ag/Readme.md" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/shatacloud.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/config.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/lib/pingancloud.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/rdi/itemoper.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/db.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/timed_redis_sync.py" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/lualib/ant/frame.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/lualib/ant/loadconfig.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/hsm/conf/setslice.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/hsm/conf/hsm.conf" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/webs/operItem.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/utils.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/cert_sync.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/db.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/webs/domain.py" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/lualib/ant/request.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/lualib/ant/healthcheck.lua" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/hsm/conf/access.lua" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/config.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/webs/domain.py" "~/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/timed_redis_sync.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/cert_sync.py" "/Users/mosp/work/pingan/task/cdn-projects/rdi-scgw/scgw/0.1.18.1/mini_cdn_config.json" "~/work/pingan/task/cdn-projects/cpa/5.0.5.4/lib/service.py" "~/work/pingan/task/cdn-projects/cpa/5.0.5.4/lib/common.py" "~/work/pingan/task/cdn-projects/rdi-scgw/rdi/itemoper.py" "/Users/mosp/work/pingan/task/cdn-projects/pacdnL1/uce/conf/uce.conf"))
+(setq regexp-search-ring '("min" "register" "srv" "dbconn" "\\_<loadGlobalConfigLoop\\_>" "\\_<db\\_>" "\\_<RedisConfig\\_>" "Set" "convjkkkkkkkkkkjjjjjj" "conf/" "dst" "location" "\\_<check_cc\\_>" "waf_cc" "check_cc" "\\_<then\\_>"))
+(setq register-alist (list '(106) '(105) '(119) '(113) '(t . "mes]\n") '(102 . "struct rte_eth_xstats_name_off {\n	char name[RTE_ETH_XSTATS_NAME_SIZE];\n") (list 82 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook `(lambda nil (set-marker ,mk ,nil (get-buffer ," *temp*")))) mk)) '(48 . "+++\n")))
+(setq file-name-history '("/usr/include/stdio.h" "/Users/mosp/study/myblog/mospan-hugo-blog/content/post/2017/2017-08-27-emacs-mospan-tutorial.md" "/Users/mosp/study/myblog/mospan-hugo-blog/content/post/2017/2017-08-27-emacs-mospan-tutorial.orig" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/g/cfg.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/g/all_test.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/app/cfgconv/cfgconv.conf" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/util/http/httpExec.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/util/http/httpclient.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/util/httpclient.go" "~/work/pingan/task/cdn-venus/tool/cfgconv/src/vendor/github.com/garyburd/redigo/redis/redis.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/check/checkPlatforms.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/conv/convPlatforms.go" "~/work/pingan/task/cdn-venus/tool/cfgconv/src/vendor/github.com/garyburd/redigo/redis/reply.go" "/usr/local/go/src/time/sleep.go" "/usr/local/go/src/time/time.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/api/api.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/check/check.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/conv/conv.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/db/redis_test.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/db/redis.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/db/options.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/cm/redis_test.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/cm/options.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/cm/redis.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/cm/cm.go" "~/work/pingan/task/cdn-venus/tool/cfgconv/src/vendor/github.com/qiniu/log/logext.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/g/var.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/g/var.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/g/cfg.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/README.md" "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/app/pcm_center/pcm_center.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/srv/conv.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/app/cfgconv/cfgconv_test.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/app/cfgconv/cfgconv.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/conv.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv_test.go" "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/cfgconv_test.go" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/waf/check_post.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/waf/waf.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/waf/sysdef_rule.lua" "/Users/mosp/work/pingan/task/tools/mergeConfig/lpfMerge.go" "/Users/mosp/work/pingan/task/tools/mergeConfig/mergeConfig.go" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/cachekey_rewrite.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/video/mp4/libs/mp4lib.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/video/mp4/mp4_process.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/video/proxy.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/conf/vhosts/proxy.conf" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/conf/vhosts/proxy.conf" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/utils/qredis.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/utils/lredis.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/node/attack_ip_forbidden.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/modules/mod_http_redirect_https.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/modules/mod_header_req.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/modules/mod_src_ip.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/modules/mod_timestamp.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/modules/mod_referer.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/utils/limit/req.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/modules/mod_qps_limit_rate.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/modules/mod_limit_rate.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/modules/mod_origin_auth.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/utils/module.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/modules/mod_hsts.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/domain_config.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/access.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/init_worker_phase/update_encry_key.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/https/ngx/ssl/session/ticket.lua" "~/work/pingan/task/cdn-projects/ant/src/ngx_openresty/build/nginx-1.11.2/src/core/ngx_core.h" "~/work/pingan/task/cdn-projects/ant/src/ngx_openresty/build/nginx-1.11.2/src/core/ngx_config.h" "~/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_enhanced_module.h" "/usr/include/ctype.h" "/usr/include/stdint.h" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/https/ngx/ssl/session/ticket/key_rotation.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/init_worker_phase/init_worker_by_lua.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/utils/clibs/chash_src/chash.h" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/utils/chash.lua" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/init_phase/init.lua" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/conf/vhosts/testrun.conf" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/conf/vhosts/https.proxy.conf" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/conf/vhosts/for_conf.conf" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/conf/vhosts/cms.conf" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/https/https_reuse_session_conf.lua" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/init_worker_phase/init_worker_by_lua.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/conf/upstream.conf" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/header_filter/modules/mod_header_resp.lua" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/global.lua" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/header_filter/filter.lua" "/usr/local/Cellar/emacs/26.1_1/share/emacs/26.1/etc/HELLO" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/redis_conf.lua" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/body_filter/filter.lua" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/conf/current.key" "~/work/pingan/task/cdn-venus/openresty-redis-lua/lua/access/access.lua" "/Users/mosp/work/pingan/task/cdn-venus/openresty-redis-lua/lua/conf/nginx.conf" "~/work/pingan/task/cdn-projects/ant/src/ngx_openresty/build/nginx-1.11.2/src/core/ngx_file.c" "/Users/mosp/work/pingan/task/cdn-projects/ant/src/ngx_cache_enhanced/ngx_http_cache_purge_module.c" "~/work/pingan/task/Panda/net-cache/src/photon.v1/app/photon/listener.go" "/usr/local/go/src/net/http/method.go" "~/work/pingan/task/Panda/net-cache/src/photon.v1/errutil/errutil.go" "~/work/pingan/task/Panda/net-cache/src/photon.v1/db/limit.v3/context.go" "~/work/pingan/task/Panda/net-cache/src/cdn.v1/model/domain.go"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
-(desktop-create-buffer 206
-  "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/web/g.go"
-  "g.go"
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/check/checkPlatforms.go"
+  "checkPlatforms.go"
   'go-mode
   '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  226
-  '(226 nil)
+  115
+  '(2866 nil)
   nil
   nil
-  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23649 3292 620881 0) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23750 50538 104450 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (4188 2926 2823 2823 1859 1701 117 3455 3589 3443 3670 2910 4344 153 4159 1534))))
 
-(desktop-create-buffer 206
-  "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/web/producer.go"
-  "producer.go"
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/conv/convPlatforms.go"
+  "convPlatforms.go"
   'go-mode
   '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  1937
-  '(1937 nil)
+  708
+  '(11057 nil)
   nil
   nil
-  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23649 3279 295793 0) (buffer-file-coding-system . utf-8-unix) (overwrite-mode)))
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23750 50392 916233 726000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (11023 610 11022 117 11014 11014 175 11014 12315 11129 3511 12441 11243 12455 10952 12455))))
 
-(desktop-create-buffer 206
-  "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/task/g.go"
-  "g.go"
-  'go-mode
-  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  455
+(desktop-create-buffer 208
+  "/Users/mosp/tmp/tmp.c"
+  "tmp.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode highlight-parentheses-mode auto-complete-mode yas/minor-mode doxymacs-mode semantic-highlight-edits-mode semantic-show-parser-state-mode senator-minor-mode semantic-idle-scheduler-mode semantic-idle-summary-mode semantic-mru-bookmark-mode hs-minor-mode guide-key-mode undo-tree-mode evil-escape-mode semantic-decoration-mode semantic-tag-folding-mode)
+  18
   '(nil nil)
   nil
   nil
-  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23648 58758 385637 285000) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+  '((indent-tabs-mode) (buffer-display-time 23750 50383 291207 726000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
 
-(desktop-create-buffer 206
+(desktop-create-buffer 208
+  nil
+  "*info*"
+  'Info-mode
+  '(global-auto-revert-mode highlight-parentheses-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  227
+  '(nil nil)
+  t
+  '("dir" "Top" nil)
+  '((tab-width . 8) (buffer-display-time 23750 49782 639375 726000) (case-fold-search . t))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/conv/conv.go"
+  "conv.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  81
+  '(81 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23750 39345 477099 564000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1 60 81 47 48 81 15 81 52 66 52 52 52 52 52 52))))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/g/var.go"
+  "var.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode hi-lock-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  316
+  '(267 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23750 39150 714391 564000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (188 348 348 348 348 348 348 348 348 348 861 66 489 489 489))))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/vendor/github.com/garyburd/redigo/redis/scan.go"
+  "scan.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  6318
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23750 38652 55015 564000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/vendor/github.com/garyburd/redigo/redis/reply.go"
+  "reply.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  6816
+  '(4492 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23750 38382 311174 564000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/db/redis_test.go"
+  "redis_test.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  9
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23749 38322 310168 697000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/g/cfg.go"
+  "cfg.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1335
+  '(810 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23749 17127 210893 534000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (810 61 1728 810 810 224 1900 11 1892 1790 137 1892 810 245 224 224))))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/app/cfgconv/cfgconv.conf"
+  "cfgconv.conf"
+  'conf-unix-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1749
+  '(1593 nil)
+  nil
+  nil
+  '((buffer-display-time 23749 9546 154893 790000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (1297 796 1249 1845 2002 1 1525 2220 2223 126 138 35 160 822 815 815))))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/g/all_test.go"
+  "all_test.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  154
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23749 9420 978230 790000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/vendor/github.com/garyburd/redigo/redis/redis.go"
+  "redis.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1039
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23749 4524 754190 961000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/conv/conv_test.go"
+  "conv_test.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  144
+  '(2086 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23749 3583 433997 961000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (2294))))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/notice/notice.go"
+  "notice.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  16
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23748 59432 358198 27000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/check/check.go"
+  "check.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  25
+  '(56 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23748 56272 347178 27000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (287 282 287 287 287 287 287 287 287 287 287 287 287 287 287 287))))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/app/cfgconv/cfgconv.go"
+  "cfgconv.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  33
+  '(180 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23748 47636 586246 27000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (33 33 1 1 1))))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/db/redis.go"
+  "redis.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode hi-lock-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  1784
+  '(350 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23747 49237 959657 27000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1393 1784 167 1370 1784 182 312))))
+
+(desktop-create-buffer 208
+  "/usr/local/go/src/time/sleep.go"
+  "sleep.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  325
+  '(325 nil)
+  t
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23747 40363 699143 772000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/usr/local/go/src/time/time.go"
+  "time.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  21381
+  '(nil nil)
+  t
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23747 40353 720397 772000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/db/options.go"
+  "options.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  685
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23747 39776 147727 825000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/cfgconv/cfgconv/api/api.go"
+  "api.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  213
+  '(54 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23747 37096 396325 672000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/src/vendor/github.com/qiniu/log/logext.go"
+  "logext.go"
+  'go-mode
+  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  12160
+  '(9339 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23747 34696 87681 79000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (9253 9187 8970 8906 6696 6696 10871 9181))))
+
+(desktop-create-buffer 208
   "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/app/pcm_center/pcm_center.go"
   "pcm_center.go"
   'go-mode
   '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  768
-  '(nil nil)
+  1
+  '(1049 nil)
   nil
   nil
-  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23648 54700 255676 285000) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23746 2759 957950 332000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring (1 1049 1 1049 1))))
 
-(desktop-create-buffer 206
-  "/Users/mosp/work/pingan/task/cdn-venus/jupiter/src/pinganyun.com/venus/pcm/center/load/g.go"
-  "g.go"
-  'go-mode
-  '(global-auto-revert-mode highlight-parentheses-mode auto-complete-mode doxymacs-mode outline-minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
-  211
-  '(nil nil)
+(desktop-create-buffer 208
+  "/Users/mosp/work/pingan/task/cdn-venus/tool/cfgconv/README.md"
+  "README.md"
+  'markdown-mode
+  '(global-auto-revert-mode highlight-parentheses-mode yas/minor-mode semantic-show-unmatched-syntax-mode guide-key-mode undo-tree-mode evil-escape-mode)
+  63
+  '(1 nil)
   nil
   nil
-  '((show-trailing-whitespace . t) (indent-tabs-mode) (buffer-display-time 23648 54677 615204 285000) (buffer-file-coding-system . undecided-unix) (overwrite-mode)))
+  '((tab-width . 4) (buffer-display-time 23746 1993 989940 332000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
 

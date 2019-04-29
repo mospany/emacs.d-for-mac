@@ -1,24 +1,52 @@
 VERSION=`perl -ne 'print $$1 if /;; Version: (.*)/' auto-complete.el`
 PACKAGE=auto-complete-${VERSION}
+EMACS ?= emacs
+CASK ?= cask
+SITE=../auto-complete.github.com
 
-byte-compile:
-	emacs -Q -L . -batch -f batch-byte-compile *.el
+ELPA_DIR = $(shell EMACS=$(EMACS) $(CASK) package-directory)
 
-install:
-	emacs -Q -L . -batch -l etc/install ${DIR}
+test: elpa
+	$(CASK) exec $(EMACS) -batch -Q -L . \
+		-l tests/run-test.el \
+		-f ert-run-tests-batch-and-exit
+
+byte-compile: elpa
+	$(CASK) exec $(EMACS) -Q -L . -batch -f batch-byte-compile auto-complete.el auto-complete-config.el
+
+install: byte-compile
+	$(CASK) exec $(EMACS) -Q -L . -batch -l etc/install ${DIR}
+
+README.html: README.md
+	pandoc --standalone --to html --output $@ $^
+
+site: README.html
+	(cd doc && make)
+	cp README.html $(SITE)/index.html
+	mkdir -p $(SITE)/doc
+	cp doc/*.png doc/*.html doc/*.css $(SITE)/doc
 
 clean:
+	rm -f README.html
 	rm -f *.elc
 	rm -f doc/*.html
 	rm -rf ${PACKAGE}
-	rm -f ${PACKAGE}.zip ${PACKAGE}.tar.bz2
+	rm -f ${PACKAGE}.zip ${PACKAGE}.tar ${PACKAGE}.tar.bz2
 
 package: clean
 	mkdir ${PACKAGE}
-	cp -r *.el Makefile README.txt TODO.txt COPYING.*.txt doc etc dict ${PACKAGE}
+	cp -r *.el Makefile *.md COPYING.* doc dict ${PACKAGE}
 
-tar.bz2: package
-	tar cjf ${PACKAGE}.tar.bz2 ${PACKAGE}
+package.tar: package
+	tar cf ${PACKAGE}.tar ${PACKAGE}
 
-zip: package
+package.tar.bz2: tar
+	bzip2 ${PACKAGE}.tar
+
+package.zip: package
 	zip -r ${PACKAGE}.zip ${PACKAGE}
+
+elpa: $(ELPA_DIR)
+$(ELPA_DIR): Cask
+	$(CASK) install
+	touch $@
