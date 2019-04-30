@@ -189,6 +189,78 @@
           ac-source-files-in-current-dir
           ac-source-filename)))
 
+(defun ac-settings-4-go ()
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-words-in-buffer
+          ac-source-words-in-same-mode-buffers
+          ac-source-files-in-current-dir
+          ac-source-filename)))
+
+(defun ac-settings-4-go ()
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-words-in-buffer
+          ac-source-words-in-same-mode-buffers
+          ac-source-files-in-current-dir
+          ac-source-filename)))
+
+(defun ac-settings-4-go ()
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-words-in-buffer
+          ac-source-words-in-same-mode-buffers
+          ac-source-files-in-current-dir
+          ac-source-filename)))
+
+(defun ac-settings-4-lua ()
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-words-in-buffer
+          ac-source-words-in-same-mode-buffers
+          ac-source-files-in-current-dir
+          ac-source-filename)))
+
+(defun ac-settings-4-sh ()
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-words-in-buffer
+          ac-source-words-in-same-mode-buffers
+          ac-source-files-in-current-dir
+          ac-source-filename)))
+
+(defun ac-settings-4-scala ()
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-words-in-buffer
+          ac-source-words-in-same-mode-buffers
+          ac-source-files-in-current-dir
+          ac-source-filename)))
+
+(defun ac-settings-4-python ()
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-words-in-buffer
+          ac-source-words-in-same-mode-buffers
+          ac-source-files-in-current-dir
+          ac-source-filename)))
+
+(defun ac-settings-4-php ()
+  (setq ac-sources
+        '(ac-source-yasnippet
+          ac-source-abbrev
+          ac-source-words-in-buffer
+          ac-source-words-in-same-mode-buffers
+          ac-source-files-in-current-dir
+          ac-source-filename)))
+
 (am-add-hooks
  `(lisp-mode-hook emacs-lisp-mode-hook lisp-interaction-mode-hook
                   svn-log-edit-mode-hook change-log-mode-hook)
@@ -205,6 +277,11 @@
    ('ruby-mode-hook   'ac-settings-4-ruby)
    ('html-mode-hook   'ac-settings-4-html)
    ('awk-mode-hook    'ac-settings-4-awk)
+   ('go-mode-hook    'ac-settings-4-go)
+   ('lua-mode-hook    'ac-settings-4-lua) ;;lua关键字补全还不好使，20190429 by mosp
+   ('sh-mode-hook    'ac-settings-4-sh)
+   ('py-mode-hook    'ac-settings-4-python)
+   ('php-mode-hook    'ac-settings-4-php) ;;php关键字补全还不好使，20190429 by mosp
    ('tcl-mode-hook    'ac-settings-4-tcl)))
 
 (eal-eval-by-modes
