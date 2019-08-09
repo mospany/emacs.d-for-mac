@@ -27,5 +27,5 @@
  (go-mode . 1)
  (speedbar . 1)
  (sr-speedbar-toggle . 2)
- (go-add-tags . 13)
+ (go-add-tags . 21)
 )

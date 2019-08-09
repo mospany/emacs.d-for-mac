@@ -772,6 +772,7 @@ original buffer content
 ;#+OPTIONS: ^:{} H:5 toc:5
 (require 'ox-md nil t)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(add-to-list 'auto-mode-alist '("\\.orgx\\'" . org-mode))
 (add-hook 'org-mode-hook 'turn-on-font-lock)
 ;让不同级别的标题采用不同大小的字体 add by mosp, 2015/08/22 18:02:11 
 (add-hook 'org-mode-hook
