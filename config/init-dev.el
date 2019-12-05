@@ -897,12 +897,12 @@ original buffer content
                       ("邵海明" . ?l)
                       ))
 (setq org-agenda-files (list "~/github/mospany/private/mydoc/notes/gtd/inbox.org"
-                             "~/github/mospany/private/mydoc/notes/todos/project.org"
-                             "~/github/mospany/private/mydoc/notes/todos/task.org"
-                             "~/github/mospany/private/mydoc/notes/todos/note.org"
-                             "~/github/mospany/private/mydoc/notes/todos/study.org"
-                             "~/github/mospany/private/mydoc/notes/todos/home.org"
-                             "~/github/mospany/private/mydoc/notes/todos/life.org"                                                                                       
+                             "~/github/mospany/private/mydoc/notes/gtd/project.org"
+                             "~/github/mospany/private/mydoc/notes/gtd/task.org"
+                             "~/github/mospany/private/mydoc/notes/gtd/note.org"
+                             "~/github/mospany/private/mydoc/notes/gtd/study.org"
+                             "~/github/mospany/private/mydoc/notes/gtd/home.org"
+                             "~/github/mospany/private/mydoc/notes/gtd/life.org"                                                                                       
                              ))
 ;(org-remember-insinuate)  ;------------shade by mosp for debug emacs24.5 in 2016-05-20 -----------------
 (setq org-directory "~/github/mospany/private/mydoc/notes/gtd/") 
