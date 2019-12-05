@@ -896,16 +896,16 @@ original buffer content
                       ("马红光" . ?f) ("原万万" . ?g) ("张超" . ?i) ("徐成华" . ?j) ("李阳" . ?k)
                       ("邵海明" . ?l)
                       ))
-(setq org-agenda-files (list "~/KuaiPan/mydoc/notes/gtd/inbox.org"
-                             "~/KuaiPan/mydoc/notes/todos/project.org"
-                             "~/KuaiPan/mydoc/notes/todos/task.org"
-                             "~/KuaiPan/mydoc/notes/todos/note.org"
-                             "~/KuaiPan/mydoc/notes/todos/study.org"
-                             "~/KuaiPan/mydoc/notes/todos/home.org"
-                             "~/KuaiPan/mydoc/notes/todos/life.org"                                                                                       
+(setq org-agenda-files (list "~/github/mospany/private/mydoc/notes/gtd/inbox.org"
+                             "~/github/mospany/private/mydoc/notes/todos/project.org"
+                             "~/github/mospany/private/mydoc/notes/todos/task.org"
+                             "~/github/mospany/private/mydoc/notes/todos/note.org"
+                             "~/github/mospany/private/mydoc/notes/todos/study.org"
+                             "~/github/mospany/private/mydoc/notes/todos/home.org"
+                             "~/github/mospany/private/mydoc/notes/todos/life.org"                                                                                       
                              ))
 ;(org-remember-insinuate)  ;------------shade by mosp for debug emacs24.5 in 2016-05-20 -----------------
-(setq org-directory "~/KuaiPan/mydoc/notes/gtd/") 
+(setq org-directory "~/github/mospany/private/mydoc/notes/gtd/") 
 ;(setq org-remember-templates '(("New" ?n "* %? %t \n %i\n %a" "~/.gtd/inbox.org" ) 
 ;                               ("Task" ?t "** TODO %?\n %i\n %a" "~/.gtd/task.org" "Tasks") 
 ;                               ("Calendar" ?c "** TODO %?\n %i\n %a" "~/.gtd/task.org" "Tasks") 
@@ -914,33 +914,33 @@ original buffer content
 ;                               ("Project" ?p "** %?\n %i\n %a" "~/.gtd/project.org" %g) ))
 ;;;相当于上面注释的，去掉了%a，代表写入时不自动插入当前光标所在标题的链接, 2014/06/20 15:10:30 alter by mosp
 (setq org-capture-templates
-      `(("n" "New" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/inbox.org" "New")
+      `(("n" "New" entry (file+headline ,"~/github/mospany/private/mydoc/notes/gtd/inbox.org" "New")
             "* %? %t\n  %i\n ")
-        ("t" "Task" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/task.org" "Task")
+        ("t" "Task" entry (file+headline ,"~/github/mospany/private/mydoc/notes/gtd/task.org" "Task")
             "** TODO %?\n  %i\n  ")
-        ("c" "Calendar" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/task.org" "Task")
+        ("c" "Calendar" entry (file+headline ,"~/github/mospany/private/mydoc/notes/gtd/task.org" "Task")
             "** TODO %?\n  %i\n  ")
-        ("i" "Idea" entry (file+datetree ,"~/KuaiPan/mydoc/notes/gtd/task.org" "Idea")
+        ("i" "Idea" entry (file+datetree ,"~/github/mospany/private/mydoc/notes/gtd/task.org" "Idea")
             "* %?\n  %i\n  ")
-        ("n" "Note" entry (file+datetree ,"~/KuaiPan/mydoc/notes/gtd/note.org" "Note")
+        ("n" "Note" entry (file+datetree ,"~/github/mospany/private/mydoc/notes/gtd/note.org" "Note")
             "* %?\n  %i\n  ")
-        ("s" "Study" entry (file+datetree ,"~/KuaiPan/mydoc/notes/gtd/study.org" "Study")
+        ("s" "Study" entry (file+datetree ,"~/github/mospany/private/mydoc/notes/gtd/study.org" "Study")
             "* %?\n  %i\n  ")
-        ("h" "Home" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/home.org" "Home")
+        ("h" "Home" entry (file+headline ,"~/github/mospany/private/mydoc/notes/gtd/home.org" "Home")
             "* %?\n  %i\n  ")
-        ("l" "Life" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/life.org" "Life")
+        ("l" "Life" entry (file+headline ,"~/github/mospany/private/mydoc/notes/gtd/life.org" "Life")
             "* %?\n  %i\n  ")
-        ("p" "Project" entry (file+headline ,"~/KuaiPan/mydoc/notes/gtd/project.org" "Project")
+        ("p" "Project" entry (file+headline ,"~/github/mospany/private/mydoc/notes/gtd/project.org" "Project")
             "* %?\n  %i\n  ")))
-(setq org-remember-templates '(("New" ?n "* %? %t \n %i\n" "~/KuaiPan/mydoc/notes/gtd/inbox.org" ) 
-                               ("Task" ?t "** TODO %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/task.org" "Tasks") 
-                               ("Calendar" ?c "** TODO %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/task.org" "Tasks") 
-                               ("Idea" ?i "** %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/task.org" "Ideas") 
-                               ("Note" ?r "* %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/note.org" )
-                               ("Study" ?s "* %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/study.org" )                                
-                               ("Home" ?h "* %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/home.org" )
-                               ("Life" ?l "* %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/life.org" )                                                               
-                               ("Project" ?p "** %?\n %i\n" "~/KuaiPan/mydoc/notes/gtd/project.org" %g) )) 
+(setq org-remember-templates '(("New" ?n "* %? %t \n %i\n" "~/github/mospany/private/mydoc/notes/gtd/inbox.org" ) 
+                               ("Task" ?t "** TODO %?\n %i\n" "~/github/mospany/private/mydoc/notes/gtd/task.org" "Tasks") 
+                               ("Calendar" ?c "** TODO %?\n %i\n" "~/github/mospany/private/mydoc/notes/gtd/task.org" "Tasks") 
+                               ("Idea" ?i "** %?\n %i\n" "~/github/mospany/private/mydoc/notes/gtd/task.org" "Ideas") 
+                               ("Note" ?r "* %?\n %i\n" "~/github/mospany/private/mydoc/notes/gtd/note.org" )
+                               ("Study" ?s "* %?\n %i\n" "~/github/mospany/private/mydoc/notes/gtd/study.org" )                                
+                               ("Home" ?h "* %?\n %i\n" "~/github/mospany/private/mydoc/notes/gtd/home.org" )
+                               ("Life" ?l "* %?\n %i\n" "~/github/mospany/private/mydoc/notes/gtd/life.org" )                                                               
+                               ("Project" ?p "** %?\n %i\n" "~/github/mospany/private/mydoc/notes/gtd/project.org" %g) )) 
 
 (setq org-default-notes-file (concat org-directory "/inbox.org"))
 
