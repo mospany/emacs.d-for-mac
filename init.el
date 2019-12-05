@@ -26,7 +26,7 @@
    "pandoc -s -c ~/.emacs.d/style/markdown_github_style.css --mathjax --highlight-style espresso")
  '(org-agenda-files
    (quote
-    ("~/KuaiPan/mydoc/notes/gtd/life.org" "~/KuaiPan/mydoc/notes/gtd/study.org" "~/KuaiPan/mydoc/notes/gtd/home.org" "~/KuaiPan/mydoc/notes/gtd/project.org" "~/KuaiPan/mydoc/notes/gtd/task.org" "~/KuaiPan/mydoc/notes/gtd/note.org")))
+    ("~/github/mospany/private/mydoc/notes/gtd/life.org" "~/github/mospany/private/mydoc/notes/gtd/study.org" "~/github/mospany/private/mydoc/notes/gtd/home.org" "~/github/mospany/private/mydoc/notes/gtd/project.org" "~/github/mospany/private/mydoc/notes/gtd/task.org" "~/github/mospany/private/mydoc/notes/gtd/note.org")))
  '(package-selected-packages
    (quote
     (yasnippet yaml-mode yagist writeroom-mode wgrep w3m unfill undo-tree textile-mode tagedit string-edit smex simple-httpd session scss-mode scratch sass-mode rvm robe rinari regex-tool rainbow-mode rainbow-delimiters quack pomodoro pointback paredit page-break-lines neotree mwe-log-commands multiple-cursors multi-term move-text markdown-mode lua-mode link less-css-mode legalese json-mode js2-mode idomenu ibuffer-vc htmlize hl-sexp haskell-mode guide-key groovy-mode gitignore-mode gitconfig-mode git-timemachine git-link git-gutter ggtags fringe-helper flyspell-lazy flymake-sass flymake-ruby flymake-python-pyflakes flymake-lua flymake-jslint flymake-css flymake-coffee flx-ido fakir expand-region exec-path-from-shell erlang emmet-mode dsvn dropdown-list dired-details dired+ diminish dictionary define-word csharp-mode crontab-mode cpputils-cmake connection company-c-headers company-anaconda color-theme coffee-mode cmake-mode buffer-move bookmark+ bbdb auto-compile async ace-window))))

@@ -15,7 +15,7 @@
  (rear-context-string . "ev.el]]\n* Tasks\n")
  (position . 442))
 ("org-remember-last-stored"
- (filename . "~/KuaiPan/mynote/gtd/life.org")
+ (filename . "~/github/mospany/private/mynote/gtd/life.org")
  (front-context-string . "** Each dish onl")
  (rear-context-string . "+html: </div>\n\n\n")
  (position . 242))
