@@ -1,7 +1,7 @@
 #+TITLE: emacs常用快捷键备忘录
 #+STYLE: <link rel="stylesheet" type="text/css" href="/home/mosp/.emacs.d/style/style.css" />
 #+OPTIONS: ^:{} H:5 |<|>|
-#+OPTIONS:     H:2 num:t toc:t \n:nil @:t ::t |:t ^:t f:t TeX:t
+#+OPTIONS:     H:2 num:t toc:t \n:t @:t ::t |:t ^:t f:t TeX:t
 
 * 显示
   缩小字体:                     C-x C-–
