@@ -1,7 +1,7 @@
 #+TITLE: Org-mode 简明手册
-#+AUTHOR:    Hu Wenbiao
-#+EMAIL:     huwenbiao1989@gmail.com
-#+DATE:      2012-09-26 Wed
+#+AUTHOR:    mospan
+#+EMAIL:     moshengping@163.com
+#+DATE:      2019-12-05
 #+DESCRIPTION:
 #+KEYWORDS: Emacs
 #+LANGUAGE:  en
@@ -13,6 +13,9 @@
 #+LINK_UP:   /Open_Source
 #+LINK_HOME: /Open_Source
 #+XSLT:
+
+* 声明
+  该文档基于Hu Wenbiao[huwenbiao1989@gmail.com]于2012-09-26 Wed编写的《Org-mode 简明手册》修改而来，目的是为了适应个人emacs配置与新版本org-mode。
 
 * 简介[fn:22]
 
