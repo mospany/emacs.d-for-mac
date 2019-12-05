@@ -17,7 +17,7 @@
   C-c v                       打开org-mode agenda视图
   C-c v a                     进入agenda视图，agenda view提供四种视图，分别是日(d)，周（w），月(v m)，年(v y)，括号里是切换这四种视图的快捷键。
   C-c C-q                     打标签
-  C-c C-r                     打开org-remember进行备忘记录
+  C-c m                       打开org-capture进行备忘记录
 ** 在TODO行上
   C-c C-t                     切换TODO状态，循环选择
   C-u C-c C-t                 切换TODO状态，手工选择

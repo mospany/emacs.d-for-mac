@@ -291,12 +291,12 @@
 ;以下设置时使用t作为多剪贴板的起始按键，比如 tay(不是 "ay哦) tap(就是"ap啦)~ 
 (define-key evil-normal-state-map "t" 'evil-use-register) 
 
-;;org-remember启动的快捷键
+;;org-remember启动的快捷键, 新版org 8.x 以后已使用org-capture代替
 (global-set-key (kbd "C-c C-r") 'org-remember)
 (global-set-key (kbd "C-c C-,") 'org-priority)
 
 ;;org-capture启动的快捷键
- (define-key global-map "\C-cc" 'org-capture)
+(define-key global-map "\C-cm" 'org-capture)
 
 ;; -------------emacs w3m--------------------
 (global-set-key "\C-xm" 'browse-url-at-point)  
