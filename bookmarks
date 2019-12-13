@@ -10,10 +10,10 @@
  (page . 27)
  (handler . doc-view-bookmark-jump))
 ("org-capture-last-stored"
- (filename . "~/github/mospany/private/mydoc/notes/gtd/home.org")
- (front-context-string . "** TODO 写一篇文章 \n ")
- (rear-context-string)
- (position . 8))
+ (filename . "~/github/mospany/private/mydoc/notes/gtd/task.org")
+ (front-context-string . "** TODO 融合CDN ja")
+ (rear-context-string . "2019-12-10 Tue>\n")
+ (position . 906))
 ("org-remember-last-stored"
  (filename . "~/github/mospany/private/mynote/gtd/life.org")
  (front-context-string . "** Each dish onl")

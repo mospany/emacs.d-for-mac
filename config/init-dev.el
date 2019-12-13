@@ -197,11 +197,31 @@
 ;;bookmark
 (require 'bookmark-settings)
 
-;;CC-MODE c语言开发环境
-;; Make a non-standard key binding.  We can put this in
-;; c-mode-base-map because c-mode-map, c++-mode-map, and so on,
-;; inherit from it.
-(require 'cc-mode)
+;--------java mode(meghanada) -----------------
+(require 'meghanada)
+(add-hook 'java-mode-hook
+          (lambda ()
+            ;; meghanada-mode on
+            (meghanada-mode t)
+            ;; enable telemetry
+            (meghanada-telemetry-enable t)
+            (flycheck-mode +1)
+            (setq c-basic-offset 2)
+            ;; use code format
+            (add-hook 'before-save-hook 'meghanada-code-beautify-before-save)))
+(cond
+   ((eq system-type 'windows-nt)
+    (setq meghanada-java-path (expand-file-name "bin/java.exe" (getenv "JAVA_HOME")))
+    (setq meghanada-maven-path "mvn.cmd"))
+   (t
+    (setq meghanada-java-path "java")
+    (setq meghanada-maven-path "mvn")))
+
+;CC-MODE c语言开发环境
+; Make a non-standard key binding.  We can put this in
+; c-mode-base-map because c-mode-map, c++-mode-map, and so on,
+; inherit from it.
+;(require 'cc-mode) 
 (defun my-c-initialization-hook ()
   (define-key c-mode-base-map "\C-m" 'c-context-line-break))
 (add-hook 'c-initialization-hook 'my-c-initialization-hook)
@@ -1096,6 +1116,7 @@ original buffer content
 (add-hook 'javascript-mode-hook 'my-c-mode-auto-pair)
 (add-hook 'org-mode-hook 'my-c-mode-auto-pair)
 (add-hook 'go-mode-hook 'my-c-mode-auto-pair)
+(add-hook 'java-mode-hook 'my-c-mode-auto-pair)
 ;;;输入左边的括号，就会自动补全右边的部分.包括(), "", [] , {} , 等等。
 
 ;;;-------------------------org2blog--------------------------------------
@@ -1256,3 +1277,5 @@ original buffer content
 (require 'org2hugo-subtree)
 
 (require 'imenu-list)
+
+

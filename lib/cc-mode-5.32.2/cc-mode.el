@@ -160,7 +160,7 @@ variable system (see \"cc-langs.el\")."
   (cond ((eq mode 'c-mode)    (c-init-language-vars c-mode))
 	((eq mode 'c++-mode)  (c-init-language-vars c++-mode))
 	((eq mode 'objc-mode) (c-init-language-vars objc-mode))
-	((eq mode 'java-mode) (c-init-language-vars java-mode))
+	((eq mode 'java-mode) (c-init-language-vars java-mode)) ;; shade by mosp, 2019-12-13  replace by meghanada
 	((eq mode 'idl-mode)  (c-init-language-vars idl-mode))
 	((eq mode 'pike-mode) (c-init-language-vars pike-mode))
 	((eq mode 'awk-mode)  (c-init-language-vars awk-mode))
