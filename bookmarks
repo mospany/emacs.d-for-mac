@@ -11,9 +11,9 @@
  (handler . doc-view-bookmark-jump))
 ("org-capture-last-stored"
  (filename . "~/github/mospany/private/mydoc/notes/gtd/task.org")
- (front-context-string . "** TODO 融合CDN ja")
- (rear-context-string . "2019-12-10 Tue>\n")
- (position . 906))
+ (front-context-string . "** TODO  会议： 直播需")
+ (rear-context-string . "1] \\\\\n     done\n")
+ (position . 2104))
 ("org-remember-last-stored"
  (filename . "~/github/mospany/private/mynote/gtd/life.org")
  (front-context-string . "** Each dish onl")

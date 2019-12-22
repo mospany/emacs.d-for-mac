@@ -51,8 +51,8 @@
 
 
 ;; 所有的自动补全的配置
-(require 'all-auto-complete-settings)
-(setq-default global-auto-complete-mode t)
+;(require 'all-auto-complete-settings)     ;; 这两行影响到java-meg-mode暂屏蔽，by mosp, 2019-12-22
+;(setq-default global-auto-complete-mode t)
 
 ;;先设置缩进
 ;;设置TAB宽度为4

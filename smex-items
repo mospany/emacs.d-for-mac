@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ meghanada-back-jump
+ meghanada-jump-declaration
  go-add-tags
  sr-speedbar-toggle
  speedbar
  go-mode
  abs-indent
- abs-unindent
- list-packages
 )
 
 ;; ----- smex-data -----
@@ -28,4 +28,6 @@
  (speedbar . 1)
  (sr-speedbar-toggle . 2)
  (go-add-tags . 41)
+ (meghanada-jump-declaration . 1)
+ (meghanada-back-jump . 1)
 )
