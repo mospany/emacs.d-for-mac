@@ -392,6 +392,9 @@
 (define-key go-mode-map [(C-f8)] 'cscope-find-global-definition-no-prompting)
 (define-key go-mode-map [(f7)] 'gocscope-pop-mark)
 (define-key go-mode-map [(f8)] 'godef-jump)
+;java-mode
+(define-key java-mode-map [(f7)] 'meghanada-back-jump)
+(define-key java-mode-map [(f8)] 'meghanada-jump-declaration)
 
 ;;swith-window
 (global-set-key (kbd "C-x o") 'switch-window)
