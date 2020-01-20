@@ -30,4 +30,5 @@
  (go-add-tags . 41)
  (meghanada-jump-declaration . 1)
  (meghanada-back-jump . 1)
+ (View-quit . 65)
 )
