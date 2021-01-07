@@ -10,10 +10,10 @@
  (page . 27)
  (handler . doc-view-bookmark-jump))
 ("org-capture-last-stored"
- (filename . "~/github/mospany/private/mydoc/notes/gtd/inbox.org")
- (front-context-string . "***** 测试  <2020-")
- (rear-context-string . "2020-01-20 Mon>\n")
- (position . 420))
+ (filename . "~/github/mospany/private/mydoc/notes/gtd/task.org")
+ (front-context-string . "***** TODO  三朵云错")
+ (rear-context-string . "2020-10-23 Fri>\n")
+ (position . 6122))
 ("org-remember-last-stored"
  (filename . "~/github/mospany/private/mynote/gtd/life.org")
  (front-context-string . "** Each dish onl")

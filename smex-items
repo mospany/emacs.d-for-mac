@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ downcase-region
+ upcase-region
+ calendar-forward-day
+ calendar-backward-day
  meghanada-back-jump
  meghanada-jump-declaration
  go-add-tags
- sr-speedbar-toggle
- speedbar
- go-mode
- abs-indent
 )
 
 ;; ----- smex-data -----
@@ -30,5 +30,10 @@
  (go-add-tags . 41)
  (meghanada-jump-declaration . 1)
  (meghanada-back-jump . 1)
- (View-quit . 65)
+ (View-quit . 113)
+ (markdown-preview . 4)
+ (calendar-backward-day . 1)
+ (calendar-forward-day . 1)
+ (upcase-region . 1)
+ (downcase-region . 13)
 )

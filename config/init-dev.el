@@ -914,9 +914,9 @@ original buffer content
 (setq org-log-done 'note)
 (add-hook 'org-after-todo-statistics-hook 'org-summary-todo)
 (setq org-tag-alist '(("@work" . ?w) ("@home" . ?h) ("projects" . ?p) ("study" . ?s) 
-                      ("ALL" . ?a) ("莫生平" . ?m) ("武桂珠" . ?c) ("李朋飞" . ?d) ("李昶" . ?e)
-                      ("马红光" . ?f) ("原万万" . ?g) ("张超" . ?i) ("徐成华" . ?j) ("李阳" . ?k)
-                      ("邵海明" . ?l)
+                      ("ALL" . ?a) ("莫生平" . ?m) ("魏海通" . ?c) ("李朋飞" . ?d) ("赵航" . ?e)
+                      ("张玉辰" . ?f) ("张毅" . ?g) ("刘冬冬" . ?i) ("芈成洋" . ?j) ("邵永珍" . ?k)
+                      ("陆军" . ?l) ("韩丽娟" . ?o)
                       ))
 (setq org-agenda-files (list "~/github/mospany/private/mydoc/notes/gtd/inbox.org"
                              "~/github/mospany/private/mydoc/notes/gtd/project.org"
